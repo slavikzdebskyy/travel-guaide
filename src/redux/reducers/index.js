@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux';
 
-import CountriesReducer from './countries_reducer';
+import countriesReducer from './countries_reducer';
 
-export default combineReducers ({
-  countries: CountriesReducer
-  
-})
+export default  combineReducers ({
+  routing: routerReducer,
+  countries: countriesReducer  
+});

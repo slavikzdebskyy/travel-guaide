@@ -1,4 +1,4 @@
-const CountriesReducer = (state=[], action) => {
+const countriesReducer = (state=[], action) => {
   switch (action.type) {
 
     case 'INIT_COUNTRIES': 
@@ -10,4 +10,4 @@ const CountriesReducer = (state=[], action) => {
   
 }
 
-export default CountriesReducer;
+export default countriesReducer;

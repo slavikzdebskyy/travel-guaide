@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import AmCharts from '@amcharts/amcharts3-react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 import countryActions from '../../redux/actions/coutry_actions';
 import './map_component.scss';
@@ -36,10 +35,7 @@ class MapComponent extends Component {
     return (  
      
       
-      <div className = 'chartwrapper'>
-       <div>
-        <Link to={'/country/ghjk'}>Culture & Indetity</Link>
-        </div> 
+      <div className = 'chartwrapper'>      
         <AmCharts.React className = 'map' options={config} />
       </div>
     );
@@ -50,7 +46,7 @@ const mapStateToProps = state => {
   return {countries: state.countries}
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch, state) => {
   return dispatch(countryActions())
 }
 
