@@ -2,16 +2,16 @@
   "name": "travel",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src",
+    "lint:watch": "esw --watch",
+    "stylelint": "stylelint './src/**/*.scss'",
+    "precommit": "npm run lint && npm run stylelint",
+    "prepush": "npm run test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +21,25 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "dependencies": {
+    "@amcharts/amcharts3-react": "^3.1.0",
+    "amcharts3": "^3.21.14",
+    "ammap3": "^3.21.14",
+    "amstock3": "^3.21.14",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-redux": "^5.1.1",
+    "react-router": "^3.2.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-hash-history": "^0.2.3",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
 }

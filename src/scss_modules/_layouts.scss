@@ -1,6 +1,8 @@
-body {
-  margin: 0;
-  padding: 0;
+@import './varitables';
+@import './mixins';
+
+
+body {  
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -12,3 +14,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+header {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  min-height: 450px;
+  @include flex(column, center, flex-end);  
+}
+
+h1,
+h2 {
+  color: map-get($colors-text, headers);
+  max-width: 800px;
+  text-align: center;
+}
+
