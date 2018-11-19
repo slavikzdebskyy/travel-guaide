@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import AmCharts from '@amcharts/amcharts3-react';
 import { connect } from 'react-redux';
 
-import countryActions from '../../redux/actions/coutry_actions';
-import './map_component.scss';
+import countryActions from '../../redux/actions/country.actions';
+import './map.component.scss';
 
 class MapComponent extends Component {
 
@@ -27,7 +27,7 @@ class MapComponent extends Component {
       'listeners': [{
         'event': 'clickMapObject',
         'method': event => {          
-          this.props.updateData(event.mapObject.title);          
+          this.props.getCountry(event.mapObject.title);          
         }
       }]
     };

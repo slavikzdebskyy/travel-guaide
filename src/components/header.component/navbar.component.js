@@ -1,5 +1,5 @@
 import React from 'react';
-import './navbar_component.scss';
+import './navbar.component.scss';
 
 
 const NavBarComponent = ({country}) =>  (   

@@ -1,0 +1,36 @@
+@import '../../scss_modules/mixins';
+@import '../../scss_modules/variables';
+
+
+.country-component-container {
+  @include flex(column, center, space-around); 
+  max-width: 800px;
+  padding: 20px;
+  h2 {
+    color: map-get($colors-main, black-col);
+    background-color: map-get($colors-main, white-col);
+    font-size: 32px;
+  }
+}
+
+.country-component-item {
+  p {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;    
+    background-color: map-get($colors-main, white-col);
+    
+  }
+  h3 {
+    color: map-get($colors-main, black-col);
+    background-color: map-get($colors-main, white-col);
+    font-size: 24px;
+  } 
+}
+.main-component-container {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;  
+}
