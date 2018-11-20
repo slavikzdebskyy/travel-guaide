@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
+import TopButton from './top.button';
 import './main.component.scss';
 
 class CountryComponent extends Component {
   
-
-   
   render () {        
     
     return (   
@@ -17,9 +16,10 @@ class CountryComponent extends Component {
               { item.subtitle ? <h3>{item.subtitle}</h3> : null }
               { item.picture ? <img src = {item.picture} alt = '#'/> : null }
               { item.text ? <p>{item.text}</p> : null }
-            </div>            
+            </div>                        
           )
-        })}
+        })}  
+        <TopButton />  
       </div>      
     );
   }
