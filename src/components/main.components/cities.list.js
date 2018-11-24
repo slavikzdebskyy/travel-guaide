@@ -12,11 +12,22 @@ class CitiesList extends Component {
     };
   }  
 
+  setSelectedCity () {
+    if (this.props.params.city) {
+      const index = this.props.citiesList.indexOf(this.props.params.city);
+      this.setState({ selectedIndex: index });
+    }
+  }
+
   selectCity = (index) => {
-    const pathName = this.props.location.pathname + '/' + this.props.citiesList[index];
     this.setState({ selectedIndex: index });
+    const pathName = '/' + this.props.params.country + '/' + this.props.citiesList[index];    
     this.props.router.push(pathName);
   };
+
+  componentDidMount() {
+    this.setSelectedCity();
+  }
 
   render() {
     return (
@@ -41,7 +52,4 @@ class CitiesList extends Component {
   }
 }
 
-export default  withRouter(CitiesList);
-
-
-
+export default withRouter(CitiesList);

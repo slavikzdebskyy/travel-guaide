@@ -3,7 +3,7 @@ import { routerReducer } from 'react-router-redux';
 
 import initialStoreReducer from './initial.store.reducer';
 
-export default  combineReducers ({
+export default combineReducers ({
   routing: routerReducer,
-  countries: initialStoreReducer
-});
+  countries: initialStoreReducer  
+})

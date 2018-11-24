@@ -1,9 +1,11 @@
-const initialStoreReducer = (state = [], action) => {
+import countriesData from '../../data/dataCountries';
+
+const initialStoreReducer = (state = countriesData, action) => {
   switch (action.type) {
 
     case 'INIT_COUNTRIES': 
-      return [...action.payload];     
-    
+      return [...action.payload];    
+
     default:
       return state;
   } 

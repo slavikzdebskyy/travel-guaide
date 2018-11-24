@@ -12,12 +12,9 @@ import store from '../redux/create.store'
 class AppComponent extends Component {
 
   constructor (props) {
-    super(props)
-    
+    super(props)    
     this.history = syncHistoryWithStore(browserHistory, store);
-  }  
-
-  
+  }    
 
 render() { 
   return (      
@@ -38,8 +35,5 @@ const mapDispatchToProps = (dispatch) => {
   return dispatch(initialStoreAction())
 }
 
-export default connect(
-    mapStateToProps,
-     mapDispatchToProps
-    )(AppComponent);
+export default connect(mapStateToProps, mapDispatchToProps)(AppComponent);
   
