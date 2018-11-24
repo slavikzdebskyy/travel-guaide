@@ -1,30 +1,53 @@
 @import '../../scss_modules/variables';
 @import '../../scss_modules/mixins';
 
-.navbar-container {
+nav.navbar-container {
   width: 100%;  
   ul {
    @include flex(row, center, center);
    background-color: rgba($color: #000000, $alpha: 0.7);
    li:not(.counry-name){
+    position:relative;
+    z-index: 1;
     color: map-get($colors-text, navbar);
     letter-spacing: 1px;
     padding: 10px 15px 10px;
     font-size: 18px;
     font-weight: 700;
-    cursor: pointer;
-    transition: .4s;
-    &:hover {
+    cursor: pointer;   
+    &:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      height: 1px;
+      content: '.';
+      color: transparent;
       background-color: map-get($colors-bg, navbar-hover);
+      visibility: none;
+      opacity: 0;
+      z-index: -1;
+      transition: all .6s;
+    }
+    &:hover {
       color: rgba($color: #000000, $alpha: 0.7);
-    }    
+      &:after {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+      }
+    }
    }
    li.counry-name {
      h2 {
        margin: 0;
        padding-right: 20px;
        letter-spacing: 3px;
-     }
-   }
+      }
+    }
   }
 }

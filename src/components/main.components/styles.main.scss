@@ -1,0 +1,169 @@
+@import '../../scss_modules/mixins';
+@import '../../scss_modules/variables';
+
+
+
+.country-component-container {
+  @include flex(row, flex-start, space-around); 
+  width: 100%; 
+}
+
+.countries {
+  @include flex(column, center, space-around); 
+  max-width: 800px;
+  margin-right: 40px;  
+}
+
+.country-item {
+  position: relative;
+  z-index: 5;    
+  p {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;       
+  }
+  h2 {
+    color: map-get($colors-main, black-col);
+    font-size: 32px;
+  }
+  h3 {
+    color: map-get($colors-main, black-col);
+    font-size: 24px;
+  } 
+}
+.main-component-container {
+  @include flex(row, flex-start, center); 
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;  
+  position: relative;
+  &::after {
+    content: "";    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    background-color: rgba(map-get($colors-main, white-col), 0.8);
+  }
+}
+
+.topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: map-get($colors-main, black-col);
+  color: map-get($colors-main, white-col);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  &:hover {
+    background-color: lighten(map-get($colors-main, black-col),30%);
+  }
+}
+.cities-component-container {
+  position: relative;
+  z-index: 5;
+  width: 200px;
+  h2 {
+    font-size: 32px;
+    color: map-get($colors-main, black-col);
+   letter-spacing: 5px;
+  } 
+  li {
+    &.city {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 10px;
+      width: 100%;
+      padding-left: 70px;
+      border-radius: 10px; 
+      line-height: 2;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      transition: all 2s;     
+    }
+    &:after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-radius: 10px;
+      content: '';
+      opacity: 0;
+    }
+    &:before {
+      content: '';
+      background-color: map-get($colors-main, white-col);
+      border-radius: 10px;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: scale(0.001, 0.001);
+    }
+    &:hover {
+      background-color: map-get($colors-bg, navbar-hover);
+      color: map-get($colors-main, white-col);
+      z-index: 6;
+      &:after {
+        color: map-get($colors-main, white-col);
+        z-index: 0;
+        animation: under_line 1s;        
+        opacity: 1;
+      }      
+    }    
+    &.selected {
+      outline: 0;
+      color: map-get($colors-main, white-col);
+      background-color: map-get($colors-bg, navbar-hover);
+      &:before {
+        animation: effect_dylan .8s ease-out;
+      }
+    }    
+  }  
+}
+
+
+
+@keyframes under_line {
+  0% {
+    width: 0%;
+    height: 3px;
+  }
+  50% {
+    width: 100%;
+    height: 2px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background-color: map-get($colors-bg, navbar-hover);
+  }
+}
+
+@keyframes effect_dylan {
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+
+

@@ -1,46 +1,45 @@
 import React, { Component } from 'react';
-import { createStore, applyMiddleware } from 'redux';
-import { Router, Route, browserHistory } from 'react-router';
-import { Provider } from 'react-redux';
+import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import thunk from 'redux-thunk';
+import { connect } from 'react-redux';
 
-import MapComponent from '../components/map.component/map.component';
-import HeaderComponent from '../components/header.component/header.component';
-import MainComponent from './main.component/main.component';
+import HeaderComponent from './header.components/header.component';
 
-import reducer from '../redux/reducers'
+import initialStoreAction from '../redux/actions/initial.action';
+import routes from '../routes';
+import store from '../redux/create.store'
 
 class AppComponent extends Component {
 
   constructor (props) {
     super(props)
     
-    this.store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
-    this.history = syncHistoryWithStore(browserHistory, this.store);   
+    this.history = syncHistoryWithStore(browserHistory, store);
   }  
 
-  getCountry = value => {
-    return this.history.push(`/country/${value}`);
-  } 
+  
 
-render(){
-  return (    
+render() { 
+  return (      
       <div className = 'app-container'>
-        
-        <Provider store = {this.store}>
-        <div>
-          <HeaderComponent />
+          <HeaderComponent />          
           <Router history = {this.history}>
-            <Route path = '/' component = {() => <MapComponent getCountry = {this.getCountry}/>} />
-            <Route path = '/country/:country' component = {MainComponent} />          
+            {routes}                     
           </Router>
-        </div>
-        </Provider>        
       </div>
     );  
   }
 };
+const mapStateToProps = state => {
+  return state
+}
 
-export default AppComponent;
+const mapDispatchToProps = (dispatch) => {
+  return dispatch(initialStoreAction())
+}
+
+export default connect(
+    mapStateToProps,
+     mapDispatchToProps
+    )(AppComponent);
+  

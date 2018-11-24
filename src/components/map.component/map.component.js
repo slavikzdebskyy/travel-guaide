@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
 import AmCharts from '@amcharts/amcharts3-react';
-import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
 
-import countryActions from '../../redux/actions/country.actions';
 import './map.component.scss';
 
 class MapComponent extends Component {
 
-  render () {  
-    
+  goToCountry (countryName) {
+    this.props.router.push(countryName);
+  }
+
+  render () {     
     const config = {
       'type': 'map',
       'theme': 'light',  
@@ -27,7 +29,7 @@ class MapComponent extends Component {
       'listeners': [{
         'event': 'clickMapObject',
         'method': event => {          
-          this.props.getCountry(event.mapObject.title);          
+          this.goToCountry(event.mapObject.title);          
         }
       }]
     };
@@ -42,12 +44,4 @@ class MapComponent extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {countries: state.countries}
-}
-
-const mapDispatchToProps = (dispatch, state) => {
-  return dispatch(countryActions())
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(MapComponent);
+export default withRouter(MapComponent);

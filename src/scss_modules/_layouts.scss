@@ -29,4 +29,18 @@ h2 {
   max-width: 800px;
   text-align: center;
 }
-
+ button.error-btn {
+   background: none;
+   border: none;
+   outline: none;
+   padding: 10px;
+   cursor: pointer;
+   color: map-get($colors-text, error-btn);
+   font-size: 22px;
+   font-weight: 600;
+   letter-spacing: 2px;
+   transition: .4s ease-out;
+   &:hover {
+    color: map-get($colors-text, error-btn-hover);
+   }
+ }

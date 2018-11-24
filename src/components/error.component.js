@@ -1,9 +1,16 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
- const ErrorComponent = () =>  {   
+ const ErrorComponent = (props) =>  { 
     return (   
-      <div className = 'error-component'>     
+      <div className = 'error-component'>  
+      <button 
+        onClick = {() => props.router.push('/')}
+        className = 'error-btn'
+        >
+          Return
+      </button>   
       </div>
     );  
 };
-export default ErrorComponent;
+export default withRouter(ErrorComponent);

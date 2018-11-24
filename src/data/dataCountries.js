@@ -1,4 +1,4 @@
-const coutriesData = [
+const countriesData = [
   {
     "country": "Italy",
     "cities": [
@@ -84,4 +84,4 @@ const coutriesData = [
   }
 ]
 
-export default coutriesData;
+export default countriesData;

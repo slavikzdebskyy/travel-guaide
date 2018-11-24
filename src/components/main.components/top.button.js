@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { IoIosArrowUp } from 'react-icons/io';
 
-import './main.component.scss'; 
+import './styles.main.scss'; 
 
 class TopButton  extends Component {
   constructor(props) {
@@ -34,7 +34,7 @@ class TopButton  extends Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.scrollListener);
+    window.removeEventListener('scroll', this.scrollListener.bind(this));
   }
 
   render () {
