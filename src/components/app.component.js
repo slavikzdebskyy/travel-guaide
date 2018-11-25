@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import HeaderComponent from './header.components/header.component';
 
-import initialStoreAction from '../redux/actions/initial.action';
+import initialStoreAction from '../redux/actions/initial.store.action';
 import routes from '../routes';
 import store from '../redux/create.store'
 
@@ -27,13 +27,15 @@ render() {
     );  
   }
 };
+
 const mapStateToProps = state => {
-  return state
+  return state;
 }
 
 const mapDispatchToProps = (dispatch) => {
-  return dispatch(initialStoreAction())
+  return dispatch(initialStoreAction());
 }
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(AppComponent);
   

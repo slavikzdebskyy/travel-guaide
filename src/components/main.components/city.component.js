@@ -11,19 +11,19 @@ class CityComponent extends Component {
 
   
 
-  render() {    
+  render() {  
     return (
       <div>
        <h1>This is City Component</h1>
-       <CitiesList citiesList = {this.props.counrtryInfo.cities} />
+       <CitiesList citiesList = {this.props.cities.map(item => {return item.name})} />
       </div>
     );
   }
 }
 
 
-const mapStateToProps = (state, ownProps) => {
-  return {counrtryInfo: state.countries.find(item => item.country.toUpperCase() === ownProps.params.country.toUpperCase())};
+const mapStateToProps = state => {
+  return {cities: state.cities};
 }
 
 export default  withRouter(connect(mapStateToProps)(CityComponent));

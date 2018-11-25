@@ -1,4 +1,4 @@
-const dataCities = [
+const citiesData = [
   {
     "name": "Milan",
     "bg_image": "https://www.studyatraffles.com/rafflesnews/wp-content/uploads/2018/04/2018Apr-JournalisinginMilanItaly-Banner.jpg",
@@ -245,4 +245,4 @@ const dataCities = [
   }
 ];
 
-export default dataCities;
+export default citiesData;
