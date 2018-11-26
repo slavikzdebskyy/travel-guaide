@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
 
-import TopButton from './top.button';
-import CitiesList from './cities.list';
+import TopButton from '../top.button';
+import CitiesList from '../city.components/cities.list';
 import CountryInfo from './country.info';
 import ErrorComponent from '../error.component';
-import './styles.main.scss';
+import './styles.country.scss';
 
 class CountryComponent extends Component {
 

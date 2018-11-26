@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { IoIosArrowUp } from 'react-icons/io';
 
-import './styles.main.scss'; 
-
 class TopButton  extends Component {
   constructor(props) {
     super(props)

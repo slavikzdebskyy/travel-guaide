@@ -1,0 +1,44 @@
+@import '../../scss_modules/variables';
+@import '../../scss_modules/mixins';
+
+.countries {
+  @include flex(column, center, space-around); 
+  max-width: 800px;
+  margin-right: 40px;  
+}
+
+.country-item {
+  position: relative;
+  z-index: 5;    
+  p {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;       
+  }
+  h2 {
+    color: map-get($colors-main, black-col);
+    font-size: 32px;
+  }
+  h3 {
+    color: map-get($colors-main, black-col);
+    font-size: 24px;
+  } 
+}
+.country-component-container {
+  @include flex(row, flex-start, center); 
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;  
+  position: relative;
+  &::after {
+    content: "";    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    background-color: rgba(map-get($colors-main, white-col), 0.8);
+  }
+}

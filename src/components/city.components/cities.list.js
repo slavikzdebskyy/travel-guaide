@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
-import './styles.main.scss';
+import './styles.city.scss';
 
 
 class CitiesList extends Component {
