@@ -33,3 +33,61 @@
     background-color: lighten(map-get($colors-main, black-col),30%);
   }
 }
+
+.city-list-container {
+  position: relative;
+  z-index: 5;
+  li {
+    &.city {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 10px;
+      width: 100%;
+      border-radius: 10px; 
+      line-height: 2;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      transition: all 2s;     
+    }
+    &:after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-radius: 10px;
+      content: '';
+      opacity: 0;
+    }
+    &:before {
+      content: '';
+      background-color: map-get($colors-main, white-col);
+      border-radius: 10px;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: scale(0.001, 0.001);
+    }
+    &:hover {
+      background-color: map-get($colors-bg, navbar-hover);
+      color: map-get($colors-main, white-col);
+      z-index: 6;
+      &:after {
+        color: map-get($colors-main, white-col);
+        z-index: 0;
+        animation: under_line 1s;        
+        opacity: 1;
+      }      
+    }    
+    &.selected {
+      outline: 0;
+      color: map-get($colors-main, white-col);
+      background-color: map-get($colors-bg, navbar-hover);
+      &:before {
+        animation: effect_dylan .8s ease-out;
+      }
+    }    
+  }  
+}

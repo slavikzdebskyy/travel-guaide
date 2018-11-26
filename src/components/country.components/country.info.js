@@ -5,10 +5,10 @@ import './styles.country.scss';
 const  CountryInfo = (info) => {   
   return (
      
-    <div className = 'countries'>    
+    <div className = 'country-info-container'>    
       { info.countryInfo.about.map((item, index) => {
         return (
-          <div className = 'country-item' key = {index}>
+          <div className = 'country-info-item' key = {index}>
             { index < 1 ? <h2>{info.countryInfo.title}</h2> : null }
             { item.subtitle ? <h3>{item.subtitle}</h3> : null }
             { item.picture ? <img src = {item.picture} alt = '#'/> : null }

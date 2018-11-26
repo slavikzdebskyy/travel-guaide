@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
-import './styles.city.scss';
-
-
 class CitiesList extends Component {
   constructor(props) {
     super(props)
@@ -31,8 +28,8 @@ class CitiesList extends Component {
 
   render() {
     return (
-      <div className = 'cities-component-container'>
-        <h2>Cities</h2>
+      <div className = 'city-list-container'>
+        <h2 className = 'cities-list-title'>Cities</h2>
          <ul>
       {this.props.citiesList.map((city, index) => {
         return (         

@@ -1,32 +1,8 @@
 @import '../../scss_modules/variables';
 @import '../../scss_modules/mixins';
 
-.countries {
-  @include flex(column, center, space-around); 
-  max-width: 800px;
-  margin-right: 40px;  
-}
-
-.country-item {
-  position: relative;
-  z-index: 5;    
-  p {
-    text-align: justify;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.5;       
-  }
-  h2 {
-    color: map-get($colors-main, black-col);
-    font-size: 32px;
-  }
-  h3 {
-    color: map-get($colors-main, black-col);
-    font-size: 24px;
-  } 
-}
 .country-component-container {
-  @include flex(row, flex-start, center); 
+  @include flex(row, flex-start, space-around); 
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -41,4 +17,15 @@
     top: 0;
     background-color: rgba(map-get($colors-main, white-col), 0.8);
   }
+}
+
+.country-info-container {
+  @include flex(column, center, space-around); 
+  max-width: 800px;
+  margin-right: 40px;  
+}
+
+.country-info-item {
+  position: relative;
+  z-index: 5;  
 }

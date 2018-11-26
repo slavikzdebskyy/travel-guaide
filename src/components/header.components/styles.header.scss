@@ -1,6 +1,17 @@
 @import '../../scss_modules/variables';
 @import '../../scss_modules/mixins';
 
+
+
+header {
+  h1,
+  h2 {
+    color: map-get($colors-text, headers);
+    max-width: 800px;
+    text-align: center;
+  }
+}
+
 nav.navbar-container {
   width: 100%;  
   ul {

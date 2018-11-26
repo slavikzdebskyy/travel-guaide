@@ -1,69 +1,63 @@
-@import '../../scss_modules/mixins';
 @import '../../scss_modules/variables';
+@import '../../scss_modules/mixins';
 
-.cities-component-container {
+.city-component-container {
+  @include flex(row, flex-start, space-around);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; 
   position: relative;
   z-index: 5;
-  width: 200px;
+  &::after {
+    content: "";    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    background-color: rgba(map-get($colors-main, white-col), 0.8);
+  }
   h2 {
-    font-size: 32px;
-    color: map-get($colors-main, black-col);
-   letter-spacing: 5px;
-  } 
-  li {
-    &.city {
-      position: relative;
+    letter-spacing: 5px;
+  }   
+}
+
+.must-visit-container {
+  @include flex(column, center, flex-start);
+  width: 300px;
+  h3 {
+    z-index: 5;
+    text-align: left;
+    font-size: 28px;
+  }
+  .must-visit-item {
+    @include flex(column, center, flex-start);
+    width: 300px;
+    height: 400px;  
+    margin: 5px;
+    position: relative;
+    z-index: 5; 
+    img {
+      width: 300px;
+      height: 400px;
       cursor: pointer;
-      margin-bottom: 10px;
-      width: 100%;
-      padding-left: 70px;
-      border-radius: 10px; 
-      line-height: 2;
-      font-size: 28px;
-      font-weight: 500;
+      &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+      }           
+    }
+    h5 {      
+      position: absolute;
+      z-index: 5; 
+      bottom: 40px;
+      margin: 0;
+      color: map-get($colors-main, white-col);      
+      font-size: 16px;
       letter-spacing: 2px;
-      transition: all 2s;     
+      text-shadow: 1px 1px 1px map-get($colors-main, black-col), 
+                   -1px -1px 1px map-get($colors-main, black-col);
     }
-    &:after {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      border-radius: 10px;
-      content: '';
-      opacity: 0;
-    }
-    &:before {
-      content: '';
-      background-color: map-get($colors-main, white-col);
-      border-radius: 10px;
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      transform: scale(0.001, 0.001);
-    }
-    &:hover {
-      background-color: map-get($colors-bg, navbar-hover);
-      color: map-get($colors-main, white-col);
-      z-index: 6;
-      &:after {
-        color: map-get($colors-main, white-col);
-        z-index: 0;
-        animation: under_line 1s;        
-        opacity: 1;
-      }      
-    }    
-    &.selected {
-      outline: 0;
-      color: map-get($colors-main, white-col);
-      background-color: map-get($colors-bg, navbar-hover);
-      &:before {
-        animation: effect_dylan .8s ease-out;
-      }
-    }    
-  }  
+  }
 }
 
 

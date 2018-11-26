@@ -23,12 +23,7 @@ header {
   @include flex(column, center, flex-end);  
 }
 
-h1,
-h2 {
-  color: map-get($colors-text, headers);
-  max-width: 800px;
-  text-align: center;
-}
+
  button.error-btn {
    background: none;
    border: none;
@@ -44,3 +39,20 @@ h2 {
     color: map-get($colors-text, error-btn-hover);
    }
  }
+ p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;       
+}
+h2 {
+  color: map-get($colors-main, black-col);
+  font-size: 32px;
+  &.cities-list-title {
+    letter-spacing: 2px;
+  }
+}
+h3 {
+  color: map-get($colors-main, black-col);
+  font-size: 24px;
+} 
