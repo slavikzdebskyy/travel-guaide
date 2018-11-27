@@ -60,7 +60,10 @@
   }
 }
 
-
+.city-description-container {
+  max-width: 800px;
+  z-index: 5;
+}
 
 @keyframes under_line {
   0% {

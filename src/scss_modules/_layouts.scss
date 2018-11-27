@@ -56,3 +56,53 @@ h3 {
   color: map-get($colors-main, black-col);
   font-size: 24px;
 } 
+
+button.login-btn {
+  position: relative;
+  background-color: #000099;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 300px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  &:after {
+    content: "";
+    background: #fff;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  &:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+}
+button.email {
+  width: 200px;
+  border-radius: 10px;
+}
+button.fb {
+  background-color: #3B5998;
+}
+
+button.twitter {
+  background-color: #55ACEE;
+}
+
+button.google {
+  background-color: #dd4b39;
+}

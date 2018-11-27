@@ -1,0 +1,61 @@
+import React from 'react';
+import TextField from '@material-ui/core/TextField';
+import FacebookLogin from 'react-facebook-login';
+
+import './style.login.scss';
+
+const responseFacebook = response => {
+  console.log(response);
+}
+
+const LoginComponent = () => (
+      <div className = 'login-container'>
+        <div className = 'login-form'>
+          <form>   
+            <TextField
+              label = 'Full name' 
+              type = 'text'         
+              margin = 'normal'
+              required          
+            /> 
+            <TextField
+              label = 'Email' 
+              type = 'email'         
+              margin = 'normal'
+              required          
+            />      
+            <TextField
+              label ='Password'          
+              type = 'password'
+              margin = 'normal'
+              required
+            />
+            <button 
+              className ='login-btn email'
+              type = 'submit'
+            >
+              Sign Up
+            </button>              
+          </form>
+          <span>OR</span>
+          <div className ='login-social'>
+            <FacebookLogin
+              appId = '197070654556237'
+              autoLoad = {true}
+              fields = 'name,email,picture'
+              callback = {responseFacebook}
+              cssClass = 'login-btn fb'
+            />
+            <button className ='twitter login-btn'>
+              <i className ='fa fa-twitter fa-fw'></i> 
+              Login with Twitter
+            </button>
+            <button className ='google login-btn'><i className ='fa fa-google fa-fw'>
+              </i> Login with Google+
+            </button>
+          </div>
+        </div>
+     </div>
+    );
+
+export default LoginComponent;

@@ -1,0 +1,29 @@
+@import '../../scss_modules/variables';
+@import '../../scss_modules/mixins';
+
+.login-container {  
+  @include flex(column, center, center);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(map-get($colors-main, black-col), 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  .login-form,
+  form {
+    @include flex(column, center, space-between);
+    width: 300px;
+    padding: 10px;
+    background-color: map-get($colors-main, white-col);
+  }
+  span {
+    margin: 10px;
+  }
+  .login-social {
+    @include flex(column, center, space-between);
+    width: 100%;
+  }
+}
+
+
+

@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import CitiesList from '../cities.list';
 import MustVisitList from './must.visit.list';
+import CityDescription from './city.description';
+
 
 
 class CityComponent extends Component {
@@ -32,10 +34,15 @@ class CityComponent extends Component {
       <div 
         className = 'city-component-container'
         style = { this.state.backgroundImage }
-      >       
+      >     
+       
        <MustVisitList 
         mustVisitList = {this.props.currentCity.mustVisit}
         cityName = {this.props.currentCity.name}
+      />
+      <CityDescription 
+        description = {this.props.currentCity.description}
+        title = {this.props.currentCity.title}
       />
        <CitiesList citiesList = {this.props.citiesList} />
       </div>
