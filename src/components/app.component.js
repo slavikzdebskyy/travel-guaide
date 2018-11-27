@@ -4,7 +4,6 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import { connect } from 'react-redux';
 
 import HeaderComponent from './header.components/header.component';
-import LoginComponent from './login.component/login';
 
 import initialStoreAction from '../redux/actions/initial.store.action';
 import routes from '../routes';
@@ -20,8 +19,7 @@ class AppComponent extends Component {
 render() { 
   return (      
       <div className = 'app-container'>
-          <HeaderComponent />   
-          {/* <LoginComponent />         */}
+          <HeaderComponent />       
           <Router history = {this.history}>
             {routes}                     
           </Router>

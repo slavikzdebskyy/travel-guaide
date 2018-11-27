@@ -1,10 +1,15 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import FacebookLogin from 'react-facebook-login';
+import GoogleLogin from 'react-google-login';
 
 import './style.login.scss';
 
 const responseFacebook = response => {
+  console.log(response);
+}
+
+const responseGoogle = (response) => {
   console.log(response);
 }
 
@@ -46,6 +51,14 @@ const LoginComponent = () => (
               callback = {responseFacebook}
               cssClass = 'login-btn fb'
             />
+            <GoogleLogin
+              clientId = '223535496927-ih6j586iut5vnq55tl7paobtdjv1hphm.apps.googleusercontent.com'
+              buttonText = 'Login with Google+'
+              onSuccess = {responseGoogle}
+              onFailure = {responseGoogle}
+              // preventActiveStyles = {true}
+              // className = 'login-btn google'
+             />,
             <button className ='twitter login-btn'>
               <i className ='fa fa-twitter fa-fw'></i> 
               Login with Twitter
