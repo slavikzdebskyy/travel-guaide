@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import CitiesList from '../cities.list';
 import MustVisitList from './must.visit.list';
-import CityDescription from './city.description';
+import Description from '../description';
 
 
 
@@ -40,7 +40,7 @@ class CityComponent extends Component {
         mustVisitList = {this.props.currentCity.mustVisit}
         cityName = {this.props.currentCity.name}
       />
-      <CityDescription 
+      <Description 
         description = {this.props.currentCity.description}
         title = {this.props.currentCity.title}
       />

@@ -12,12 +12,10 @@ const HeaderComponent = (props) => {
 
     return (   
       <header>
-        {getCountryName(props.pathname).length 
-          ? <NavBar 
-              info = {getCountryName(props.pathname)}
-            />
-          : <h1>Choose the country which you are going to visit or about which you want to tell</h1>          
-        }    
+        <NavBar 
+         info = {getCountryName(props.pathname)}
+        />
+        <h1>Choose the country which you are going to visit or about which you want to tell</h1>          
       </header>
     );
   };

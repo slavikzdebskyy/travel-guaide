@@ -91,3 +91,42 @@
     }    
   }  
 }
+
+@keyframes under_line {
+  0% {
+    width: 0%;
+    height: 3px;
+  }
+  50% {
+    width: 100%;
+    height: 2px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background-color: map-get($colors-bg, navbar-hover);
+  }
+}
+
+.description-container {
+  max-width: 800px;
+  z-index: 5;
+}
+
+@keyframes effect_dylan {
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+
+

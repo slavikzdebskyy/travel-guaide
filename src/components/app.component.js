@@ -15,13 +15,16 @@ class AppComponent extends Component {
     super(props)    
     this.history = syncHistoryWithStore(browserHistory, store);
   }    
+  componentDidMount() {
+    this.props.initStore();
+  }
 
-render() { 
+render() {
   return (      
       <div className = 'app-container'>
-          <HeaderComponent />       
+        <HeaderComponent />       
           <Router history = {this.history}>
-            {routes}                     
+            {routes}                             
           </Router>
       </div>
     );  
@@ -32,9 +35,11 @@ const mapStateToProps = state => {
   return state;
 }
 
-const mapDispatchToProps = (dispatch) => { 
-  return dispatch(initialStoreAction());
-}
+const mapDispatchToProps = dispatch => ({  
+  initStore: () => {
+    dispatch(initialStoreAction())
+  }  
+})
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(AppComponent);
