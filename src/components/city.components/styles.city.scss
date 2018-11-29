@@ -3,62 +3,70 @@
 
 .city-component-container {
   @include flex(row, flex-start, space-around);
+  flex-wrap: wrap;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed; 
-  position: relative;
-  z-index: 5;
-  &::after {
-    content: "";    
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    background-color: rgba(map-get($colors-main, white-col), 0.8);
-  }
-  h2 {
-    letter-spacing: 5px;
-  }   
+  padding-top: 50px;   
 }
 
 .must-visit-container {
-  @include flex(column, center, flex-start);
+  width: 96%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;  
+}
+
+.must-visit-item {
+  @include flex(column, center, flex-end);
   width: 300px;
-  h3 {
-    z-index: 5;
-    text-align: left;
-    font-size: 28px;
-  }
-  .must-visit-item {
-    @include flex(column, center, flex-start);
+  height: 400px;
+  position: relative;  
+  margin: 5px;
+  background-size: 130% 100%;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 300px;
-    height: 400px;  
-    margin: 5px;
-    position: relative;
-    z-index: 5; 
-    img {
-      width: 300px;
-      height: 400px;
-      cursor: pointer;
-      &:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
-      }           
-    }
-    h5 {      
-      position: absolute;
-      z-index: 5; 
-      bottom: 40px;
-      margin: 0;
-      color: map-get($colors-main, white-col);      
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-shadow: 1px 1px 1px map-get($colors-main, black-col), 
-                   -1px -1px 1px map-get($colors-main, black-col);
+    height: 400px;
+    box-sizing: inherit;
+    transform: scale(0);    
+    transition: 0.5s;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    box-sizing: inherit;
+    transition: 0.5s;
+  }
+  &:hover {
+    background-size: 140% 110%;
+    background-position-x: 15%;
+    padding-bottom: 20px;       
+    &:after {
+      border: 2px solid map-get($colors-main, white-col);
+      transform: scale(0.8);
+    } 
+    &:before {
+      background-color: rgba($color: map-get($colors-bg, hover-effect), $alpha: 0.2);
     }
   }
 }
 
 
 
+@keyframes hover-effect {
+  1% {
+    transform: scale(0);
+  }  
+  100% {
+    transform: scale(0.8);
+  }
+}

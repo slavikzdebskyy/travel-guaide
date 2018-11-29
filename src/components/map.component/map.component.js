@@ -20,7 +20,7 @@ class MapComponent extends Component {
         'getAreasFromMap': true
       },
       'areasSettings': {
-        'autoZoom': false,
+        'autoZoom': true,
         'rollOverColor': '#ef7c45',
         'color': '#e6f2ff',
         'selectedColor': '#ef7c45',

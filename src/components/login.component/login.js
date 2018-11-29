@@ -15,8 +15,8 @@ const responseGoogle = (response) => {
 
 const LoginComponent = () => (
       <div className = 'login-container'>
-        <div className = 'login-form'>
-          <form>   
+        <div>
+          <form className = 'login-form'>   
             <TextField
               label = 'Full name' 
               type = 'text'         
@@ -56,8 +56,6 @@ const LoginComponent = () => (
               buttonText = 'Login with Google+'
               onSuccess = {responseGoogle}
               onFailure = {responseGoogle}
-              // preventActiveStyles = {true}
-              // className = 'login-btn google'
              />,
             <button className ='twitter login-btn'>
               <i className ='fa fa-twitter fa-fw'></i> 

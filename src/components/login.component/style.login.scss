@@ -10,15 +10,7 @@
   top: 0;
   z-index: 100;
   .login-form,
-  form {
-    @include flex(column, center, space-between);
-    width: 300px;
-    padding: 10px;
-    background-color: map-get($colors-main, white-col);
-  }
-  span {
-    margin: 10px;
-  }
+  
   .login-social {
     @include flex(column, center, space-between);
     width: 100%;

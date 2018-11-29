@@ -29,7 +29,7 @@ class CitiesList extends Component {
   render() {
     return (
       <div className = 'city-list-container'>
-        <h2 className = 'cities-list-title'>Cities</h2>
+        <h2>Cities</h2>
          <ul>
       {this.props.citiesList.map((city, index) => {
         return (         

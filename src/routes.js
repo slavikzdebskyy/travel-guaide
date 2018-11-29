@@ -6,7 +6,7 @@ import CountryComponent from './components/country.components/country.component'
 import CityComponent from './components/city.components/city.component';
 
 const routes = (
-  <Route path = '/' >    
+  <Route exact path = '/' >    
     <IndexRoute component = {MapComponent} />
     <Route path = '/:country'>
       <IndexRoute component = {CountryComponent} />

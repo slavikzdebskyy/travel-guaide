@@ -1,9 +1,10 @@
 @import '../../scss_modules/variables';
 
 .chartwrapper {
-  width: 100%;
+  width: 96%;
+  margin: 50px auto 50px;
   position: relative;
-  padding-bottom: 50%;
+  padding-bottom: 50%;;
   .map {
     position: absolute;
     width: 100%;

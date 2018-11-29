@@ -1,20 +1,6 @@
 @import '../../scss_modules/variables';
 @import '../../scss_modules/mixins';
 
-
-
-header {
-  h1,
-  h2 {
-    color: map-get($colors-main, white-col);
-    max-width: 500px;
-    text-align: center;
-    margin-top: 70px;
-    font-size: 40px;
-    text-shadow: map-get($colors-main, white-black) 1px 1px;
-  }
-}
-
 nav.navbar-container {
   @include flex(row, center, center);
   width: 100%; 
@@ -22,47 +8,40 @@ nav.navbar-container {
   background-color: rgba($color: map-get($colors-main, black-col), $alpha: 0.1); 
   ul { 
     @include flex(row, center, center);
-    li:not(.counry-name){
-    position:relative;
-    z-index: 1;
-    color: map-get($colors-main, white-col);    
-    letter-spacing: 1px;
-    padding: 10px 15px 10px;
-    font-size: 18px;
-    cursor: pointer;   
-    &:after {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      margin: auto;
-      width: 100%;
-      height: 1px;
-      content: '.';
-      color: transparent;
-      background-color: rgba($color: map-get($colors-main, white-col), $alpha: 0.6);
-      visibility: none;
-      opacity: 0;
-      z-index: -1;
-      transition: all .6s;
-    }
-    &:hover {
-      color: rgba($color: #000000, $alpha: 0.7);
+    li {
+      position:relative;
+      z-index: 1;
+      color: map-get($colors-main, white-col);    
+      letter-spacing: 1px;
+      padding: 10px 15px 10px;
+      font-size: 18px;
+      cursor: pointer;   
       &:after {
-        opacity: 1;
-        visibility: visible;
-        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 1px;
+        content: '.';
+        color: transparent;
+        background-color: rgba($color: map-get($colors-main, white-col), $alpha: 0.6);
+        visibility: none;
+        opacity: 0;
+        z-index: -1;
+        transition: all .6s;
       }
-    }
-   }
-   li.counry-name {
-     h2 {
-       margin: 0;
-       padding-right: 20px;
-       letter-spacing: 3px;
+      &:hover {
+        color: rgba($color: #000000, $alpha: 0.7);
+        &:after {
+          opacity: 1;
+          visibility: visible;
+          height: 100%;
+        }
       }
-    }
+    }   
   }
 }

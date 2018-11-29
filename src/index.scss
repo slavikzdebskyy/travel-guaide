@@ -1,8 +1,10 @@
+@import "react-alice-carousel/src/alice-carousel.scss";
 @import './scss_modules/variables';
 @import './scss_modules/reset';
 @import './scss_modules/mixins';
 @import './scss_modules/layouts';
 @import './scss_modules/module';
+
 
 header {
   background-image: url(./assets/arhitektura-nochnogo-goroda.jpg);  

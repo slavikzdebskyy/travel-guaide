@@ -8,43 +8,20 @@ import Description from '../description';
 
 
 
-class CityComponent extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  componentDidMount() {
-    if (this.props.currentCity && this.props.currentCity.bg_image !== '') {
-      this.setState({
-        backgroundImage: { backgroundImage: "url(" +  this.props.currentCity.bg_image  + ")" }
-      })
-    } else {
-      this.setState({
-        backgroundImage: { backgroundImage: 'none' }
-      })
-    }
-  }
-  
-
-  
+class CityComponent extends Component {  
 
   render() { 
     return (
-      <div 
-        className = 'city-component-container'
-        style = { this.state.backgroundImage }
-      >     
-       
-       <MustVisitList 
-        mustVisitList = {this.props.currentCity.mustVisit}
-        cityName = {this.props.currentCity.name}
-      />
-      <Description 
-        description = {this.props.currentCity.description}
-        title = {this.props.currentCity.title}
-      />
-       <CitiesList citiesList = {this.props.citiesList} />
+      <div className = 'city-component-container'>  
+        <Description 
+          description = {this.props.currentCity.description}
+          title = {this.props.currentCity.title}
+        />   
+        <CitiesList citiesList = {this.props.citiesList} />
+        <MustVisitList 
+            mustVisitList = {this.props.currentCity.mustVisit}
+            cityName = {this.props.currentCity.name}
+         />
       </div>
     );
   }

@@ -10,30 +10,11 @@ import './styles.country.scss';
 
 class CountryComponent extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  componentDidMount() {
-    if (this.props.counrtryInfo && this.props.counrtryInfo.bg_image !== '') {
-      this.setState({
-        backgroundImage: { backgroundImage: "url(" +  this.props.counrtryInfo.bg_image  + ")" }
-      })
-    } else {
-      this.setState({
-        backgroundImage: { backgroundImage: 'none' }
-      })
-    }
-  }
-  
   render () {
     return (   
       <div> 
       { this.props.counrtryInfo ?
-        <div  
-          className = 'country-component-container'  
-          style = { this.state.backgroundImage }>
+        <div className = 'country-component-container'>
           <Description
             title = {this.props.counrtryInfo.title}
             description = {this.props.counrtryInfo.about}

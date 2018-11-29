@@ -18,29 +18,14 @@ code {
 header {
   @include flex(column, center, flex-start);
   background-repeat: no-repeat;
-  background-position-x: 0px;
-  background-position-y: -380px;
+  background-size: 100% 100%;
   width: 100%;
   min-height: 700px;  
-  animation: live-bg 60s infinite; 
+  animation: live-bg 50s infinite; 
 }
 
 
- button.error-btn {
-   background: none;
-   border: none;
-   outline: none;
-   padding: 10px;
-   cursor: pointer;
-   color: map-get($colors-text, error-btn);
-   font-size: 22px;
-   font-weight: 600;
-   letter-spacing: 2px;
-   transition: .4s ease-out;
-   &:hover {
-    color: map-get($colors-text, error-btn-hover);
-   }
- }
+ 
  p {
   text-align: justify;
   font-size: 18px;
@@ -51,17 +36,31 @@ header {
     line-height: 2;
   }      
 }
+
+h1, h2, h3 {
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 4px;
+  position: relative;
+}
+
+h1 {
+  color: map-get($colors-main, white-col);
+  text-shadow: map-get($colors-main, black-col) 1px 1px;
+  max-width: 800px;
+  text-align: left;
+  line-height: 1;
+  margin-top: 70px;
+  font-size: 72px;  
+  span.country-name {
+    font-size: 40px;
+  }    
+}
+ 
 h2 {
-  color: map-get($colors-main, black-col);
-  font-size: 32px;
-  &.cities-list-title {
-    letter-spacing: 2px;
-  }
-  &.description-title-underline-middle {
-    position: relative;
-    text-align: center;
-    padding-bottom: 20px;
-    font-weight: 400;
+  font-size: 32px;  
+  &.title-underline-middle {    
+    padding-bottom: 20px; 
     &:after {
       border-bottom: .2rem solid #dc221a;
       bottom: 0;
@@ -71,79 +70,121 @@ h2 {
       margin-left: -1.5rem;
       position: absolute;
       width: 3rem;
+    }   
+  }  
+}
+
+h3 {
+  font-size: 24px;  
+  &.must-visit-title {        
+    font-size: 28px;
+  }    
+}
+h5 { 
+  position: relative;
+  z-index: 5;     
+  margin-bottom: 40px;
+  color: map-get($colors-main, white-col);      
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: map-get($colors-main, black-col) 1px 1px;
+}
+
+button {
+  &.error-btn {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    color: map-get($colors-text, error-btn);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .4s ease-out;
+    &:hover {
+     color: map-get($colors-text, error-btn-hover);
     }
   }
-}
-h3 {
-  color: map-get($colors-main, black-col);
-  font-size: 24px;
-  &.description-title {
+  &.login-btn {
+    position: relative;
+    background-color: #000099;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 300px;
     text-align: center;
-    font-weight: 400;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    &:after {
+      content: "";
+      background: #fff;
+      display: block;
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 350%;
+      margin-left: -20px;
+      margin-top: -120%;
+      opacity: 0;
+      transition: all 0.8s
+    }
+    &:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      transition: 0s
+    }
   }
-} 
-
-button.login-btn {
-  position: relative;
-  background-color: #000099;
-  border: none;
-  font-size: 28px;
-  color: #FFFFFF;
-  padding: 20px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 300px;
-  text-align: center;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-  &:after {
-    content: "";
-    background: #fff;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
+  &.email {
+    width: 200px;
+    border-radius: 10px;
   }
-  &:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
+  &.fb {
+    background-color: #3B5998;
   }
-}
-button.email {
-  width: 200px;
-  border-radius: 10px;
-}
-button.fb {
-  background-color: #3B5998;
+  
+  &.twitter {
+    background-color: #55ACEE;
+  }
+  
+  &.google {
+    background-color: #dd4b39;
+  }
 }
 
-button.twitter {
-  background-color: #55ACEE;
+
+
+form {
+  &.login-form {
+    @include flex(column, center, space-between);
+    width: 300px;
+    padding: 10px;
+    background-color: map-get($colors-main, white-col);
+  }  
 }
 
-button.google {
-  background-color: #dd4b39;
+span {
+  margin: 10px;
 }
+
+
+
+
+
 
 @keyframes live-bg {
   1% {
-    background-position-x: 0px;
-    background-position-y: -380px;
+    background-size: 100% 100%;
   }
   50% {
-    background-position-x: -300px;
-    background-position-y: -330px;
+    background-size: 105% 115%;
   }
   100% {
-    background-position-x: 0px;
-    background-position-y: -380px
+    background-size: 100% 100%;
   }
 }

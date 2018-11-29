@@ -14,9 +14,10 @@ class AppComponent extends Component {
   constructor (props) {
     super(props)    
     this.history = syncHistoryWithStore(browserHistory, store);
+    this.props.initStore();
   }    
   componentDidMount() {
-    this.props.initStore();
+    
   }
 
 render() {

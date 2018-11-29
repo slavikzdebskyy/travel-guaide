@@ -39,15 +39,15 @@
   z-index: 5;
   li {
     &.city {
-      position: relative;
-      cursor: pointer;
-      margin-bottom: 10px;
       width: 100%;
-      border-radius: 10px; 
-      line-height: 2;
+      position: relative;      
+      padding-left: 15px; 
+      margin-bottom: 10px;      
+      border-radius: 10px;       
       font-size: 28px;
-      font-weight: 500;
+      line-height: 2;
       letter-spacing: 2px;
+      cursor: pointer;
       transition: all 2s;     
     }
     &:after {
@@ -92,6 +92,12 @@
   }  
 }
 
+.description-container {
+  max-width: 800px;
+  z-index: 5;
+}
+
+
 @keyframes under_line {
   0% {
     width: 0%;
@@ -106,11 +112,6 @@
     height: 100%;
     background-color: map-get($colors-bg, navbar-hover);
   }
-}
-
-.description-container {
-  max-width: 800px;
-  z-index: 5;
 }
 
 @keyframes effect_dylan {
