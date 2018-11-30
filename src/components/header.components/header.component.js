@@ -5,45 +5,25 @@ import NavBar from './navbar';
 import Title from './title';
 
 class HeaderComponent extends Component { 
-  constructor(props){
-    super(props)
-    this.state = {
-      
-    }
-  }
 
-  componentDidMount() {
-    this.setState({
-      pathNamesArray: this.props.pathname.split('/').filter(el => el !== '')
-    })
-  }
-
-  getCountryName () {
-    return this.props.pathname.split('/').filter(el => el !== '');
-     
-  }
-
-  render() {
+  render() { 
     return (   
       <header>
-        <NavBar 
-         info = {this.getCountryName()}
-        />
+        <NavBar />
         {
-          this.props.pathname === '/' ?
+          !this.props.location.currentCountry ?
             <h1>
               Choose the country which you are going to visit or about which you want to tell
             </h1> :
-          <Title array = {this.getCountryName()}/>
+          <Title location = {this.props.location}/>
         }       
       </header>
     );
   }
 }
 
-
 const mapStateToProps = state => {
-  return {pathname: state.routing.locationBeforeTransitions.pathname}
+  return {location : state.currentLocation};
 }
 
 export default connect(mapStateToProps)(HeaderComponent);

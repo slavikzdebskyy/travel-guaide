@@ -1,20 +1,20 @@
 import React from 'react';
 
-const Title = ({array}) => (
+const Title = ({location}) => {console.log('YITLE=>', location)
+ return (
   <div>
-    {array.length > 1 ?
-      <h1> 
-        <span className = 'country-name'>
-          {array[array.length - 2]}
-        </span>
-        <br/>
-        {array[array.length - 1]}    
-      </h1> :
-      <h1>
-        {array[array.length - 1]}
-      </h1>
-    }
+        {
+          location.currentCity ? 
+          <h1> 
+            <span className = 'country-name'>
+              {location.currentCountry}
+            </span> 
+            <br/>
+            {location.currentCity}
+          </h1> : 
+          <h1>{location.currentCountry}</h1> 
+        }
   </div>  
-)
+)}
 
 export default Title;

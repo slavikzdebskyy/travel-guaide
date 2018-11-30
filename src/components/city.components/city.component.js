@@ -6,11 +6,16 @@ import CitiesList from '../cities.list';
 import MustVisitList from './must.visit.list';
 import Description from '../description';
 
+import setCurrentLocationsAction from '../../redux/actions/set.current.location.action';
 
 
 class CityComponent extends Component {  
 
-  render() { 
+  componentDidMount() {
+    this.props.setCurrentCity(this.props.params.country, this.props.params.city);
+  }
+
+  render() {
     return (
       <div className = 'city-component-container'>  
         <Description 
@@ -35,4 +40,10 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-export default  withRouter(connect(mapStateToProps)(CityComponent));
+const mapDispatchToProps = dispatch => ({ 
+  setCurrentCity: (currCountry, currCity) => {
+    dispatch(setCurrentLocationsAction({currentCountry: currCountry, currentCity: currCity}))
+  }
+})
+
+export default  withRouter(connect(mapStateToProps, mapDispatchToProps)(CityComponent));

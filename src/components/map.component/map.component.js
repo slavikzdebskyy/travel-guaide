@@ -2,16 +2,22 @@ import React, { Component } from 'react';
 
 import AmCharts from '@amcharts/amcharts3-react';
 import { withRouter } from 'react-router';
+import { connect } from 'react-redux';
 
+import setCurrentLocationsAction from '../../redux/actions/set.current.location.action';
 import './map.component.scss';
 
 class MapComponent extends Component {
+  constructor(props) {
+    super(props)
+    this.props.resetCurrentLocation();
+  }
 
   goToCountry (countryName) {
     this.props.router.push(countryName);
   }
 
-  render () {     
+  render () {
     const config = {
       'type': 'map',
       'theme': 'light',  
@@ -35,8 +41,6 @@ class MapComponent extends Component {
     };
 
     return (  
-     
-      
       <div className = 'chartwrapper'>      
         <AmCharts.React className = 'map' options={config} />
       </div>
@@ -44,4 +48,16 @@ class MapComponent extends Component {
   }
 }
 
-export default withRouter(MapComponent);
+const mapStateToProps = state => {
+  return state;
+}
+
+const mapDispatchToProps = dispatch => ({  
+  
+  resetCurrentLocation: () => {
+    dispatch(setCurrentLocationsAction())
+  }  
+})
+
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MapComponent));

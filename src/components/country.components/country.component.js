@@ -6,9 +6,15 @@ import TopButton from '../top.button';
 import CitiesList from '../cities.list';
 import Description from '../description';
 import ErrorComponent from '../error.component';
+
+import setCurrentLocationsAction from '../../redux/actions/set.current.location.action';
 import './styles.country.scss';
 
 class CountryComponent extends Component {
+
+  componentDidMount() {
+    this.props.setCurrentCountry(this.props.params.country);
+  }
 
   render () {
     return (   
@@ -30,5 +36,10 @@ class CountryComponent extends Component {
 const mapStateToProps = (state, ownProps) => {
   return {counrtryInfo: state.countries.find(item => item.country === ownProps.params.country)};
 }
+const mapDispatchToProps = dispatch => ({ 
+  setCurrentCountry: (currCountry) => {
+    dispatch(setCurrentLocationsAction({currentCountry: currCountry}))
+  }
+})
 
-export default  withRouter(connect(mapStateToProps)(CountryComponent)) ;
+export default  withRouter(connect(mapStateToProps, mapDispatchToProps)(CountryComponent)) ;
