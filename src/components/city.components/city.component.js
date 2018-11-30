@@ -5,8 +5,10 @@ import { connect } from 'react-redux';
 import CitiesList from '../cities.list';
 import MustVisitList from './must.visit.list';
 import Description from '../description';
+import MustVisitInfo from './must.visit.info';
 
 import setCurrentLocationsAction from '../../redux/actions/set.current.location.action';
+import TopButton from '../top.button';
 
 
 class CityComponent extends Component {  
@@ -27,6 +29,8 @@ class CityComponent extends Component {
             mustVisitList = {this.props.currentCity.mustVisit}
             cityName = {this.props.currentCity.name}
          />
+         <MustVisitInfo />
+         <TopButton />
       </div>
     );
   }

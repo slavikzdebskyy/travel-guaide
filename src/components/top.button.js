@@ -10,29 +10,29 @@ class TopButton  extends Component {
     }    
   }
 
-  scrollToTop() {
+  scrollToTop () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
 
-  scrollListener () {
+  scrollListener = () => {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       this.setState({
         isVisibleTopBtn: true
       });
-    } else {    
+    } else {
       this.setState({
         isVisibleTopBtn: false
       });
-    }    
+    }
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.scrollListener.bind(this));
+    window.addEventListener('scroll', this.scrollListener);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.scrollListener.bind(this));
+    window.removeEventListener('scroll', this.scrollListener);
   }
 
   render () {

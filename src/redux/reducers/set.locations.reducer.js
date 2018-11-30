@@ -4,14 +4,7 @@ const initState = {
 }
 
 const setLocationsReducer = (state = initState, action) => {
-  switch (action.type) {
-
-    case 'SET_LOCATIONS': 
-      return {...action.payload};          
-
-    default:
-      return state;
-  }   
+  return action.type === 'SET_LOCATIONS' ? {...action.payload} : state;  
 }
 
 export default setLocationsReducer;

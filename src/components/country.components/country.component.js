@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import TopButton from '../top.button';
 import CitiesList from '../cities.list';
 import Description from '../description';
-import ErrorComponent from '../error.component';
+import ErrorComponent from '../error';
 
 import setCurrentLocationsAction from '../../redux/actions/set.current.location.action';
 import './styles.country.scss';

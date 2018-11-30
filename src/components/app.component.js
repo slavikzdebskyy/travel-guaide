@@ -3,7 +3,7 @@ import { Router, browserHistory } from 'react-router';
 import { connect } from 'react-redux';
 
 import HeaderComponent from './header.components/header.component';
-import initialStoreAction from '../redux/actions/initial.store.action';
+import { initinalCountriesAction, initinalCitiesAction } from '../redux/actions/initial.store.actions';
 
 import routes from '../routes';
 
@@ -11,7 +11,8 @@ class AppComponent extends Component {
 
   constructor (props) {
     super(props)    
-    this.props.initStore();    
+    this.props.initCounrtyInStore();
+    this.props.initCityInStore();    
   }    
   
 render() {
@@ -31,8 +32,11 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => ({  
-  initStore: () => {
-    dispatch(initialStoreAction())
+  initCounrtyInStore: () => {
+    dispatch(initinalCountriesAction())
+  },
+  initCityInStore: () => {
+    dispatch(initinalCitiesAction())
   } 
 })
 

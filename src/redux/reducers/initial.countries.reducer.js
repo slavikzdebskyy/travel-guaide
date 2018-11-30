@@ -1,12 +1,5 @@
 const initialCountriesReducer = (state = [], action) => {
-  switch (action.type) {
-
-    case 'INIT_COUNTRIES': 
-      return [...action.payload];    
-
-    default:
-      return state;
-  }   
+  return action.type === 'INIT_COUNTRIES' ? [...action.payload] : state;
 }
 
 export default initialCountriesReducer;

@@ -31,6 +31,6 @@
 ## To do
 
   * Fill data base
-  * Fill requestes
+  * Fill requestes and comments
 
 

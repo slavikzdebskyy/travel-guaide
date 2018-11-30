@@ -8,7 +8,7 @@ const Description = (props) => {
       {props.description.map((item, index) => (
         <div key = {index}>
           <h3>{item.title}</h3>
-          <p className = "description-txt">{item.description}</p>
+          <p className = 'description-txt'>{item.description}</p>
         </div>        
       ))}
     </ul>

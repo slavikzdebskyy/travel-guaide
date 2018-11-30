@@ -15,6 +15,30 @@
   margin-top: 50px;  
 }
 
+.must-visit-info-modal { 
+  display: none;  
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;  
+  padding: 20px; 
+  animation: modal-open 1s;
+  background: rgba(map-get($colors-main, white-col), 0.95);
+  .modal-txt,
+  img {
+    max-width: 800px;
+  } 
+}
+
+.active {
+  @include flex(column, center, space-around);
+  box-sizing: inherit;
+  transform: scale(1);    
+  transition: 0.5s;
+}
+
 .must-visit-item {
   @include flex(column, center, flex-end);
   width: 300px;
@@ -24,7 +48,7 @@
   background-size: 130% 100%;
   background-repeat: no-repeat;
   transition: 0.5s;
-  cursor: pointer;
+  cursor: pointer;  
   &:after {
     content: '';
     position: absolute;
@@ -60,13 +84,11 @@
   }
 }
 
-
-
-@keyframes hover-effect {
+@keyframes modal-open {
   1% {
     transform: scale(0);
   }  
   100% {
-    transform: scale(0.8);
+    transform: scale(1);
   }
 }

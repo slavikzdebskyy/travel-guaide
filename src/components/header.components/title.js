@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Title = ({location}) => {console.log('YITLE=>', location)
+const Title = ({location}) => {
  return (
   <div>
         {

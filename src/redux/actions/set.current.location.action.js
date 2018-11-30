@@ -3,11 +3,3 @@ const setCurrentLocationsAction = locations => dispatch => {
 }
 
 export default setCurrentLocationsAction;
-
-
-
-
-
-
-
-
