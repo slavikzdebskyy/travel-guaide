@@ -73,10 +73,6 @@ const citiesData = [
       },
       {
         "title": "Artistic Riches",
-        "description": ""
-      },
-      {
-        "title": "Artistic Riches",
         "description": "Few cities can rival Rome's astonishing artistic heritage. Throughout history, the city has starred in the great upheavals of Western art, drawing the top artists of the day and inspiring them to push the boundaries of creative achievement. The result is a city awash with priceless treasures. Ancient statues adorn world-class museums; Byzantine mosaics and Renaissance frescoes dazzle in the city's art-rich churches; baroque facades flank medieval piazzas. Walk around the centre and without even trying you’ll come across masterpieces by the giants of Western art – sculptures by Michelangelo, canvases by Caravaggio, Raphael frescoes and fountains by Bernini."
       },
       {
