@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
-import toggleModalAction from '../../redux/actions/toggle.modal.action';
 import setMustVisitInfoAction from '../../redux/actions/set.must.visit.info.action';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './styles.city.scss'
@@ -33,13 +33,14 @@ class MustVisitList extends Component {
 
   openMustVisitInfo = (index) =>  {
     this.props.setMustVisitInfo(this.props.mustVisitList[index]);
-    this.props.toggleMustVisitInfo(true);    
+    const pathName = this.props.location.pathname + '/' + this.props.mustVisitList[index].title.split(' ').join('-');
+    this.props.history.push(pathName)  
   }
 
   render () {
     return (
-  <div className = 'must-visit-container'>
-  <AliceCarousel
+      <div className = 'must-visit-container'>
+      <AliceCarousel
         items = {galleryItems(this.props.mustVisitList, this.openMustVisitInfo)}
         duration = {1200}
         autoPlay = {true}
@@ -55,23 +56,18 @@ class MustVisitList extends Component {
         disableAutoPlayOnAction = {true}
       />
       </div>
-)
-    }
+    )
   }
-  const mapStateToProps = state => {
-    return {store: state};
+}
+
+const mapStateToProps = state => {
+  return {store: state};
+}
+
+const mapDispatchToProps = dispatch => ({
+  setMustVisitInfo: info => {
+    dispatch(setMustVisitInfoAction(info));
   }
+})
 
-  const mapDispatchToProps = dispatch => ({
-
-    toggleMustVisitInfo: isOpenModal => {
-      dispatch(toggleModalAction(isOpenModal));
-    },
-
-    setMustVisitInfo: info => {
-      dispatch(setMustVisitInfoAction(info));
-    }
-
- })
-
-export default connect(mapStateToProps, mapDispatchToProps)(MustVisitList);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MustVisitList));

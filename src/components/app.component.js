@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Router, browserHistory } from 'react-router';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import HeaderComponent from './header.components/header.component';
 import { initinalCountriesAction, initinalCitiesAction } from '../redux/actions/initial.store.actions';
 
-import routes from '../routes';
+import mapComponent from './map.component/map.component';
+import countryComponent from './country.components/country.component';
 
 class AppComponent extends Component {
 
@@ -19,9 +20,12 @@ render() {
   return (      
     <div className = 'app-container'>
     <HeaderComponent />
-      <Router history = {browserHistory}>           
-        {routes}                  
-      </Router>
+      <BrowserRouter> 
+        <Switch>
+          <Route exact path = '/' component = {mapComponent} /> 
+          <Route path = '/:country' component = {countryComponent} /> 
+        </Switch>       
+      </BrowserRouter>
     </div>
     );  
   }
@@ -39,7 +43,6 @@ const mapDispatchToProps = dispatch => ({
     dispatch(initinalCitiesAction())
   } 
 })
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(AppComponent);
   

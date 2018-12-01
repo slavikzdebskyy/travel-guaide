@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import toggleModalAction from '../../redux/actions/toggle.modal.action';
 import './styles.city.scss';
 
  
@@ -11,8 +10,7 @@ class MustVisitInfo extends Component {
   render () {
     return (  
       <div 
-        className = {this.props.className}
-        onClick = {() => this.props.closeModal(false)}
+        className = 'must-visit-info-container'
       >
         <img src = {this.props.info.image} alt = '#' />
         <h2 className = 'title-underline-middle'>
@@ -28,15 +26,12 @@ class MustVisitInfo extends Component {
 
 const mapStateToProps = state => {
   return {
-    className: state.modalClassName,
     info : state.mustVisitInfo
   }
 }
 
 const mapDispatchToProps = dispatch => ({
-  closeModal: isOpenModal => {
-    dispatch(toggleModalAction(isOpenModal))
-  }
+  
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MustVisitInfo));

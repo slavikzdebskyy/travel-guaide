@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
+import { withRouter, Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import CitiesList from '../cities.list';
@@ -14,24 +14,28 @@ import TopButton from '../top.button';
 class CityComponent extends Component {  
 
   componentDidMount() {
-    this.props.setCurrentCity(this.props.params.country, this.props.params.city);
+    this.props.setCurrentCity(this.props.match.params.country, this.props.match.params.city);
   }
 
   render() {
     return (
-      <div className = 'city-component-container'>  
-        <Description 
-          description = {this.props.currentCity.description}
-          title = {this.props.currentCity.title}
-        />   
-        <CitiesList citiesList = {this.props.citiesList} />
-        <MustVisitList 
-            mustVisitList = {this.props.currentCity.mustVisit}
-            cityName = {this.props.currentCity.name}
-         />
-         <MustVisitInfo />
-         <TopButton />
-      </div>
+      <Switch>
+        <Route exact path = '/:country/:city'>
+          <div className = 'city-component-container'>  
+            <Description 
+              description = {this.props.currentCity.description}
+              title = {this.props.currentCity.title}
+            />   
+            <CitiesList citiesList = {this.props.citiesList} />
+            <MustVisitList 
+                mustVisitList = {this.props.currentCity.mustVisit}
+                cityName = {this.props.currentCity.name}
+            />
+            <TopButton />
+          </div>
+        </Route>
+        <Route path = '/:country/:city/:location' component = {MustVisitInfo}/>
+      </Switch>
     );
   }
 }
@@ -40,7 +44,7 @@ class CityComponent extends Component {
 const mapStateToProps = (state, ownProps) => {
   return {
     citiesList: state.cities.map(item => item.name),
-    currentCity: state.cities.find(item => item.name === ownProps.params.city)
+    currentCity: state.cities.find(item => item.name === ownProps.match.params.city)
   }
 }
 

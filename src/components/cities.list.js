@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 
 class CitiesList extends Component {
   constructor(props) {
@@ -10,16 +10,16 @@ class CitiesList extends Component {
   }  
 
   setSelectedCity () {
-    if (this.props.params.city) {
-      const index = this.props.citiesList.indexOf(this.props.params.city);
+    if (this.props.match.params.city) {
+      const index = this.props.citiesList.indexOf(this.props.match.params.city);
       this.setState({ selectedIndex: index });
     }
   }
 
   selectCity = (index) => {
     this.setState({ selectedIndex: index });
-    const pathName = '/' + this.props.params.country + '/' + this.props.citiesList[index];    
-    this.props.router.push(pathName);
+    const pathName = '/' + this.props.match.params.country + '/' + this.props.citiesList[index];    
+    this.props.history.push(pathName);
   };
 
   componentDidMount() {

@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router';
 
 const Description = (props) => {
   return (    
@@ -15,4 +14,4 @@ const Description = (props) => {
   )
 }
 
-export default withRouter(Description);
+export default Description;

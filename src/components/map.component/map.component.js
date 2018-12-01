@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import AmCharts from '@amcharts/amcharts3-react';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import setCurrentLocationsAction from '../../redux/actions/set.current.location.action';
@@ -14,7 +14,7 @@ class MapComponent extends Component {
   }
 
   goToCountry (countryName) {
-    this.props.router.push(countryName);
+    this.props.history.push(countryName);
   }
 
   render () {
