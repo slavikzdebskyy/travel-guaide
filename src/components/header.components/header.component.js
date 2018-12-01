@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import NavBar from './navbar';
 import Title from './title';
 
 class HeaderComponent extends Component { 
+  constructor(props) {
+    super(props)
+    this.state = {
+      defaultBackground: {backgroundImage : 'url(http://fullhdwallpapers.ru/image/city/22873/arhitektura-nochnogo-goroda.jpg)'}
+    }
+  }
 
-  render() { 
+  render() {
     return (   
-      <header>
+      <header 
+        style = {
+          this.props.location.currentCountry ? 
+          {backgroundImage : `url(${this.props.backgroundImg})`}  :
+          this.state.defaultBackground
+          }
+      >
         <NavBar />
         {
           !this.props.location.currentCountry ?
@@ -23,7 +36,10 @@ class HeaderComponent extends Component {
 }
 
 const mapStateToProps = state => {
-  return {location : state.currentLocation};
+  return {
+    location : state.currentLocation,
+    backgroundImg: state.headerBackground
+  };
 }
 
-export default connect(mapStateToProps)(HeaderComponent);
+export default withRouter(connect(mapStateToProps)(HeaderComponent));

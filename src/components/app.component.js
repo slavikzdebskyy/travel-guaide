@@ -18,13 +18,15 @@ class AppComponent extends Component {
   
 render() {
   return (      
-    <div className = 'app-container'>
-    <HeaderComponent />
+    <div className = 'app-container'>   
       <BrowserRouter> 
-        <Switch>
-          <Route exact path = '/' component = {mapComponent} /> 
-          <Route path = '/:country' component = {countryComponent} /> 
-        </Switch>       
+        <div>
+          <HeaderComponent />
+          <Switch>
+            <Route exact path = '/' component = {mapComponent} /> 
+            <Route path = '/:country' component = {countryComponent} /> 
+          </Switch>  
+        </div>           
       </BrowserRouter>
     </div>
     );  

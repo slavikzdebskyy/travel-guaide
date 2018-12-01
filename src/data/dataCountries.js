@@ -4,7 +4,7 @@ const countriesData = [
     "cities": [
       "Rome", "Milan", "Venice", "Florence", "Naples", "Verona" , "Turin"
     ],
-    "bg_image": "https://previews.123rf.com/images/annykos/annykos1407/annykos140700038/29857828-divertida-colecci%C3%B3n-bosquejo-colorido-de-iconos-italia-los-pa%C3%ADses-del-alfabeto.jpg",
+    "bg_image": "https://d3hne3c382ip58.cloudfront.net/files/uploads/bookmundi/resized/countrybanner/traveling-in-italy-tours-and-vacation-packages-1503904507-1920X700.jpg",
     "title" :"Welcome to Italy",    
     "about": [
       {

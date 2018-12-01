@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import './styles.city.scss';
+import TopButton from './../top.button';
 
  
 class MustVisitInfo extends Component {  
@@ -19,6 +20,7 @@ class MustVisitInfo extends Component {
         <p className = 'description-txt modal-txt'>
           {this.props.info.description}
         </p>
+        <TopButton />
       </div>      
     );
   }

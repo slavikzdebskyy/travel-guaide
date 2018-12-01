@@ -8,6 +8,7 @@ import Description from '../description';
 import ErrorComponent from '../error';
 
 import setCurrentLocationsAction from '../../redux/actions/set.current.location.action';
+import setHeaderBackgroundReducer from '../../redux/actions/set.header.background.action';
 import './styles.country.scss';
 import cityComponent from '../city.components/city.component';
 
@@ -15,6 +16,7 @@ class CountryComponent extends Component {
 
   componentDidMount() {
     this.props.setCurrentCountry(this.props.match.params.country);
+    this.props.setHeaderBackground(this.props.counrtryInfo.bg_image);
   }
 
   render () {
@@ -43,6 +45,9 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => ({ 
   setCurrentCountry: (currCountry) => {
     dispatch(setCurrentLocationsAction({currentCountry: currCountry}))
+  },
+  setHeaderBackground : (bgUrl) => {
+    dispatch(setHeaderBackgroundReducer(bgUrl))
   }
 })
 

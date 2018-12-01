@@ -6,22 +6,29 @@ import CitiesList from '../cities.list';
 import MustVisitList from './must.visit.list';
 import Description from '../description';
 import MustVisitInfo from './must.visit.info';
+import ErorrComponent from '../error';
 
 import setCurrentLocationsAction from '../../redux/actions/set.current.location.action';
+import setHeaderBackgroundReducer from '../../redux/actions/set.header.background.action';
 import TopButton from '../top.button';
 
 
 class CityComponent extends Component {  
 
-  componentDidMount() {
-    this.props.setCurrentCity(this.props.match.params.country, this.props.match.params.city);
+  componentDidMount () {
+    this.props.setCurrentCity(this.props.match.params.country, this.props.match.params.city);    
+  }
+  componentDidUpdate () {
+    this.props.setHeaderBackground(this.props.currentCity.bg_image);
   }
 
   render() {
     return (
       <Switch>
         <Route exact path = '/:country/:city'>
-          <div className = 'city-component-container'>  
+          {this.props.currentCity.description ? 
+          <div className = 'city-component-container'> 
+          
             <Description 
               description = {this.props.currentCity.description}
               title = {this.props.currentCity.title}
@@ -32,7 +39,9 @@ class CityComponent extends Component {
                 cityName = {this.props.currentCity.name}
             />
             <TopButton />
+            
           </div>
+          : <ErorrComponent />}
         </Route>
         <Route path = '/:country/:city/:location' component = {MustVisitInfo}/>
       </Switch>
@@ -51,6 +60,9 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => ({ 
   setCurrentCity: (currCountry, currCity) => {
     dispatch(setCurrentLocationsAction({currentCountry: currCountry, currentCity: currCity}))
+  },
+  setHeaderBackground : (bgUrl) => {
+    dispatch(setHeaderBackgroundReducer(bgUrl))
   }
 })
 

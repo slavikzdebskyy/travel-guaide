@@ -28,14 +28,13 @@ class CitiesList extends Component {
 
   render() {
     return (
-      <div className = 'city-list-container'>
-        <h2>Cities</h2>
-         <ul>
+         <ul className = 'city-list-container'>
+           <li><h2 className = 'cities-list'>Cities</h2></li>
       {this.props.citiesList.map((city, index) => {
         return (         
           <li 
             key = {index}
-            className={index === this.state.selectedIndex ? 'city selected' : 'city'} 
+            className = 'city' 
             onClick = {() => this.selectCity(index)}            
             >
             {city}
@@ -44,7 +43,6 @@ class CitiesList extends Component {
       })
         }
         </ul>
-      </div>
     );
   }
 }
