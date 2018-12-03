@@ -21,12 +21,12 @@
 
 ## Contribution guide
 
-[Please check guide](https://github.com/slavikzdebskyy/travel-guaide/blob/master/.github/CONTRIBUTION%20GUIDE.md)
+  * [Please check guide](https://github.com/slavikzdebskyy/travel-guaide/blob/master/.github/CONTRIBUTION%20GUIDE.md)
 
 ## Issue & Pull Request templates
 
   * [Issue template](https://github.com/slavikzdebskyy/travel-guaide/blob/master/.github/ISSUE_TEMPLATE.md)
-  * [Pull Request template] (https://github.com/slavikzdebskyy/travel-guaide/blob/master/.github/PULL_REQUEST_TEMPLATE.md)
+  * [Pull Request template](https://github.com/slavikzdebskyy/travel-guaide/blob/master/.github/PULL_REQUEST_TEMPLATE.md)
 
 ## To do
 
