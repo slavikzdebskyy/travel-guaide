@@ -9,7 +9,7 @@
 
 ## Links:
 
-* [ D e m o ](https://) 
+* [ D e m o ](https://travel-experience.herokuapp.com) 
 
 ## Tech stack
 
@@ -21,12 +21,12 @@
 
 ## Contribution guide
 
-[Please check guide](https://travel-experience.herokuapp.com)
+[Please check guide](https://github.com/slavikzdebskyy/travel-guaide/blob/master/.github/CONTRIBUTION%20GUIDE.md)
 
 ## Issue & Pull Request templates
 
-  * [Issue template](https://*******/ISSUE_TEMPLATE.md)
-  * [Pull Request template](https://**********/PULL_REQUEST_TEMPLATE.md)
+  * [Issue template](https://github.com/slavikzdebskyy/travel-guaide/blob/master/.github/ISSUE_TEMPLATE.md)
+  * [Pull Request template] (https://github.com/slavikzdebskyy/travel-guaide/blob/master/.github/PULL_REQUEST_TEMPLATE.md)
 
 ## To do
 
