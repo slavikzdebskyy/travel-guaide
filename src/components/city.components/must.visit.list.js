@@ -40,6 +40,7 @@ class MustVisitList extends Component {
   render () {
     return (
       <div className = 'must-visit-container'>
+      {this.props.mustVisitList.length ?
       <AliceCarousel
         items = {galleryItems(this.props.mustVisitList, this.openMustVisitInfo)}
         duration = {1200}
@@ -54,7 +55,7 @@ class MustVisitList extends Component {
         autoPlayDirection = "ltr"
         responsive = {responsive}
         disableAutoPlayOnAction = {true}
-      />
+      /> : null }
       </div>
     )
   }

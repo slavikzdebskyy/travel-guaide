@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom';
     return (   
       <div className = 'error-component'>  
       <button 
-        onClick = {() => props.router.push('/')}
+        onClick = {() => props.history.push('/')}
         className = 'error-btn'
         >
           Return

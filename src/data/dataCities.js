@@ -178,26 +178,26 @@ const citiesData = [
       }
     ],
     "mustVisit": [
-      {
-        "title": "",
-        "description": "",
-        "image": ""
-      },
-      {
-        "title": "",
-        "description": "",
-        "image": ""
-      },
-      {
-        "title": "",
-        "description": "",
-        "image": ""
-      },
-      {
-        "title": "",
-        "description": "",
-        "image": ""
-      }
+      // {
+      //   "title": "",
+      //   "description": "",
+      //   "image": ""
+      // },
+      // {
+      //   "title": "",
+      //   "description": "",
+      //   "image": ""
+      // },
+      // {
+      //   "title": "",
+      //   "description": "",
+      //   "image": ""
+      // },
+      // {
+      //   "title": "",
+      //   "description": "",
+      //   "image": ""
+      // }
     ]
   },
   {

@@ -22,7 +22,7 @@ class CityComponent extends Component {
     this.props.setHeaderBackground(this.props.currentCity.bg_image);
   }
 
-  render() {
+  render() { console.log('CIty =>', this.props.currentCity)
     return (
       <Switch>
         <Route exact path = '/:country/:city'>
