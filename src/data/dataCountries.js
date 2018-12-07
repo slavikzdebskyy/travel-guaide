@@ -35,7 +35,29 @@ const countriesData = [
       "Paris", "Bordeaux", "Lille", "Strasbourg", "Nice", "Toulouse"
     ],
     "bg_image": "https://previews.123rf.com/images/annykos/annykos1408/annykos140800026/31275479-bosquejo-colorido-de-la-diversi%C3%B3n-francia-patr%C3%B3n-transparente.jpg",
-    "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum adipisci dolorem. Nam, beatae! Quaerat non ad molestias, officia debitis maxime nemo. Ratione dolorem, unde quia minima consequatur repellendus quos similique ut delectus iste nulla eaque sed suscipit at itaque nostrum animi tenetur. Soluta neque perspiciatis voluptatum deserunt quibusdam doloremque?"
+    "title" :"Welcome to France",    
+    "about": [
+      {
+      "title": "",
+      "description": "France seduces travellers with its unfalteringly familiar culture, woven around cafe terraces, village-square markets and lace-curtained bistros with their plat du jour (dish of the day) chalked on the board."
+      },
+      {
+        "title": "Cultural Savoir Faire",
+        "description": "France is about world-class art and architecture. It seduces with iconic landmarks known the world over and rising stars yet to be discovered. This country's cultural repertoire is staggering – in volume and diversity. And this is where the beauty of la belle France lies: when superstars such as Mademoiselle Eiffel, royal Versailles and the celebrity-ridden French Riviera have been ticked off, there’s ample more to thrill. France is, after all, the world's top tourism destination with some 89 million visitors each year who flock to the land of the Gauls to feast on its extraordinary wealth of museums, galleries, ateliers (artist workshops) and hands-on cultural experiences."
+      },
+      {
+        "title": "Gastronomy",
+        "description": "Food is of enormous importance to the French and the daily culinary agenda takes no prisoners: breakfasting on warm croissants from the boulangerie (bakery), stopping off at Parisian bistros, and market shopping are second nature to the French – and it would be rude to refuse. But French gastronomy goes far deeper than just eating exceedingly well. Its experiential nature means there is always something tasty to observe, learn and try. Be it flipping crêpes in Brittany or clinking champagne flutes in ancient Reims cellars, the culinary opportunities are endless."
+      },
+      {
+        "title": "Art de Vivre",
+        "description": "The rhythm of daily life – dictated by the seasons in the depths of la France profonde (rural France) – exudes an intimacy that gets under your skin. Don’t resist. Rather, live the French lifestyle. Embrace the luxury of simple, everyday rituals being transformed into unforgettable moments, be it a coffee and croissant in the Parisian cafe where Jean-Paul Sartre and Simone de Beauvoir met to philosophise, a stroll through the lily-clad gardens Monet painted, or a walk on a beach in Brittany scented with the subtle infusion of language, music and mythology brought by 5th-century Celtic invaders."
+      },
+      {
+        "title": "Outdoor Action",
+        "description": "The terroir (land) of France weaves a varied journey from northern France's cliffs and sand dunes to the piercing blue sea of the French Riviera and Corsica's green oak forests. Outdoor action is what France's lyrical landscape demands – and there's something for everybody. Whether you end up walking barefoot across wave-rippled sand to Mont St-Michel, riding a cable car to glacial panoramas above Chamonix or cartwheeling down Europe's highest sand dune, France does not disappoint. Its great outdoors is thrilling, with endless opportunities and the next adventure begging to be had. Allez!"
+      }
+    ]
   }
 ]
 

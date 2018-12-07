@@ -7,11 +7,11 @@ import './style.login.scss';
 
 const responseFacebook = response => {
   console.log(response);
-}
+};
 
-const responseGoogle = (response) => {
+const responseGoogle = response => {
   console.log(response);
-}
+};
 
 const LoginComponent = () => (
       <div className = 'login-container'>

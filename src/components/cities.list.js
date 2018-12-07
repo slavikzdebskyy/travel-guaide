@@ -1,30 +1,20 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+import setCurrentLocationsAction from '../redux/actions/set.current.location.action';
+import { setHeaderBackgroundByCityAction } from '../redux/actions/set.header.background.actions';
+import { getCurrentCityAction } from '../redux/actions/get.data.actions';
 
 class CitiesList extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      selectedIndex: -1    
-    };
-  }  
 
-  setSelectedCity () {
-    if (this.props.match.params.city) {
-      const index = this.props.citiesList.indexOf(this.props.match.params.city);
-      this.setState({ selectedIndex: index });
-    }
-  }
-
-  selectCity = (index) => {
-    this.setState({ selectedIndex: index });
+  selectCity = index => { 
+    this.props.setCurrentCity(this.props.citiesList[index]);
+    this.props.setCurrentLocation(this.props.match.params.country, this.props.citiesList[index]);
+    this.props.setHeaderBackground(this.props.citiesList[index]);    
     const pathName = '/' + this.props.match.params.country + '/' + this.props.citiesList[index];    
     this.props.history.push(pathName);
   };
-
-  componentDidMount() {
-    this.setSelectedCity();
-  }
 
   render() {
     return (
@@ -47,4 +37,24 @@ class CitiesList extends Component {
   }
 }
 
-export default withRouter(CitiesList);
+const mapStateToProps = (state, ownProps) => {
+  return {
+    currentCity: state.cities.find(item => item.name === ownProps.match.params.city),
+    citiesList: state.cities.map(item => item.name)
+    
+  }
+}
+
+const mapDispatchToProps = dispatch => ({ 
+  setCurrentLocation: (currCountry, currCity) => {
+    dispatch(setCurrentLocationsAction({currentCountry: currCountry, currentCity: currCity}))
+  },
+  setHeaderBackground : cityName => {
+    dispatch(setHeaderBackgroundByCityAction(cityName))
+  },
+  setCurrentCity: cityName => {
+    dispatch(getCurrentCityAction(cityName))
+  } 
+})
+
+export default  withRouter(connect(mapStateToProps, mapDispatchToProps)(CitiesList));

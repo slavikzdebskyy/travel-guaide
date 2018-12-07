@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
- const ErrorComponent = (props) =>  { 
+ const ErrorComponent = props =>  { 
     return (   
       <div className = 'error-component'>  
       <button 

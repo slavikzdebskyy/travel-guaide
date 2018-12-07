@@ -4,7 +4,9 @@
 * Front-camp [facebook](https://www.facebook.com/groups/270300106928894)
 
 ## About App:
- 
+
+ This application is information for those who travel around the world. 
+ Only two countries are filled: Italy and France.
   
 
 ## Links:
@@ -31,6 +33,7 @@
 ## To do
 
   * Fill data base
-  * Fill requestes and comments
+  * Fixe login with social networks
+  * Add data base with users and their comments, reviews and travel experience
 
 

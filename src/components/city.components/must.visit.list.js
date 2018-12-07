@@ -19,7 +19,7 @@ const galleryItems = (itemsArray, toggleFunc) => {
         <h5>{item.title}</h5>
       </div>
     ))
-  )
+  );
 };
 
 const responsive = {
@@ -31,7 +31,7 @@ const responsive = {
 
 class MustVisitList extends Component {
 
-  openMustVisitInfo = (index) =>  {
+  openMustVisitInfo = index =>  {
     this.props.setMustVisitInfo(this.props.mustVisitList[index]);
     const pathName = this.props.location.pathname + '/' + this.props.mustVisitList[index].title.split(' ').join('-');
     this.props.history.push(pathName)  
@@ -58,17 +58,17 @@ class MustVisitList extends Component {
       /> : null }
       </div>
     )
-  }
-}
+  };
+};
 
 const mapStateToProps = state => {
-  return {store: state};
-}
+  return {mustVisitList: state.currentCity.mustVisit};
+};
 
 const mapDispatchToProps = dispatch => ({
   setMustVisitInfo: info => {
     dispatch(setMustVisitInfoAction(info));
   }
-})
+});
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MustVisitList));

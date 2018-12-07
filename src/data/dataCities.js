@@ -1,6 +1,7 @@
 const citiesData = [
   {
     "name": "Milan",
+    "country" : "Italy",
     "bg_image": "https://www.studyatraffles.com/rafflesnews/wp-content/uploads/2018/04/2018Apr-JournalisinginMilanItaly-Banner.jpg",
     "title": "Welcome to Milan",
     "description": [
@@ -60,6 +61,7 @@ const citiesData = [
   },
   {
     "name": "Rome",
+    "country" : "Italy",
     "bg_image": "https://lonelyplanetimages.imgix.net/mastheads/stock-photo-roman-sunset-77415821.jpg",
     "title": "Welcome to Rome",
     "description": [
@@ -104,6 +106,7 @@ const citiesData = [
   },
   {
     "name": "Venice",
+    "country" : "Italy",
     "bg_image": "https://www.azamaraclubcruises.com/sites/default/files/heros/venice-italy.jpg",
     "title": "Welcome to Venice",
     "description": [
@@ -153,6 +156,7 @@ const citiesData = [
   },
   {
     "name": "Florence",
+    "country" : "Italy",
     "bg_image": "https://dreamofitaly.com/wp-content/uploads/2015/05/Florence-use-church-dome-in-square.jpg",
     "title": "Welcome to Florence",
     "description": [
@@ -178,67 +182,382 @@ const citiesData = [
       }
     ],
     "mustVisit": [
-      // {
-      //   "title": "",
-      //   "description": "",
-      //   "image": ""
-      // },
-      // {
-      //   "title": "",
-      //   "description": "",
-      //   "image": ""
-      // },
-      // {
-      //   "title": "",
-      //   "description": "",
-      //   "image": ""
-      // },
-      // {
-      //   "title": "",
-      //   "description": "",
-      //   "image": ""
-      // }
+      {
+        "title": "Galleria degli Uffizi",
+        "description": "Home to the world's greatest collection of Italian Renaissance art, Florence's premier gallery occupies the vast U-shaped Palazzo degli Uffizi, built between 1560 and 1580 to house government offices. The collection, bequeathed to the city by the Medici family in 1743 on condition that it never leave Florence, contains some of Italy's best-known paintings, including Piero della Francesca's profile portraits of the Duke and Duchess of Urbino and rooms full of masterpieces by Sandro Botticelli. The gallery is undergoing a €65 million refurbishment (the Nuovi Uffizi project) that will eventually see the doubling of exhibition space and possibly a new exit loggia designed by Japanese architect Arato Isozaki. Work is pretty much complete on the permanent collection, which has grown over the years from 45 to 101 revamped rooms split across two floors; but there is much to be done still on areas earmarked for temporary exhibitions. Until the project is completed (date unknown) expect some halls to be closed and the contents of others changed. The world-famous collection, displayed in chronological order, spans the gamut of art history from ancient Greek sculpture to 18th-century Venetian paintings. But its core is the Renaissance collection. Visits are best kept to three or four hours maximum. When it all gets too much, head to the rooftop cafe (aka the terraced hanging garden, where the Medici clan listened to music performances on the square below) for fresh air and fabulous views. Tuscan Masters: 13th to 14th Centuries Arriving in the Primo Corridoio (First Corridor) on the 2nd floor, Rooms 2 to 7 are dedicated to pre- and early Renaissance Tuscan art. Among the 13th-century Sienese works displayed in Room 2 are three large altarpieces from Florentine churches by Duccio di Buoninsegna, Cimabue and Giotto. These clearly reflect the transition from the Gothic to the nascent Renaissance style. Note the overtly naturalistic realism overtones in Giotto's portrayal of the Virgin Mary and saints in Le Maestà di Ognissanti (1306–10). Moving into Siena, Bologna and Pisa in the 14th century, the highlight in Room 3 is Simone Martini's shimmering Annunciazione (1333), painted with Lippo Memmi and setting the Madonna in a sea of gold. Also of note is the Madonna con il bambino in trono e angeli (Madonna with Child and Saints; 1340) by Pietro Lorenzetti, which demonstrates a realism similar to Giotto's; unfortunately both Pietro and his artistic brother Ambrogio died from the plague in Siena in 1348. Masters in 14th-century Florence (Room 4) paid as much attention to detail as their Sienese counterparts: savour the realism of the Lamentation over the Dead Christ (1360–65) by gifted Giotto pupil, Giottino. Renaissance Pioneers Florence's victory over the Sienese at the Battle of San Romano, near Pisa, in 1432, is brought to life with outstanding realism and increased use of perspective in Paolo Uccello's magnificent Battaglia di San Romano (1435–40) in Room 8. In the same room, don't miss the exquisite Madonna con Bambino e due angeli (Madonna and Child with Two Angels; 1460–65) by Fra' Filippo Lippi, a Carmelite monk who had an unfortunate soft spot for earthly pleasures and scandalously married a nun from Prato. This work clearly influenced his pupil, Sandro Botticelli. In Room 9, Piero della Francesca's famous profile portraits (1465) of the crooked-nosed, red-robed duke and duchess of Urbino are wholly humanist in spirit: the former painted from the left side as he'd lost his right eye in a jousting accident, and the latter painted a deathly stone-white, reflecting the fact the portrait was painted posthumously. Don't miss the reverse side featuring the duke and duchess eternalised with the Virtues. In the same room, the seven cardinal and theological values of 15th-century Florence by brothers Antonio and Piero del Pollaiolo – commissioned for the merchant's tribunal in Piazza della Signoria – radiate energy. More restrained is Piero's Portrait of Galeazzo Maria Sforza (1471). The only canvas in the theological and cardinal virtues series not to be painted by the Pollaiolos is Fortitude (1470), the first documented work by Botticelli. Botticelli Room The spectacular Sala del Botticelli, numbered as Rooms 10 to 14, but in fact two large light and graceful rooms, is one of the Uffizi's hot spots and is always packed. Of the 18 Botticelli works displayed in the Uffizi in all, the iconic La nascita di Venere (The Birth of Venus; c 1485), Primavera (Spring; c 1482) and Madonna del Magnificat (Madonna of the Magnificat; 1483) are the best known by the Renaissance master known for his ethereal figures. Take time to study the lesser-known Annunciazione (Annunciation), a 6m-wide fresco painted by Botticelli in 1481 for the San Martino hospital in Florence. True aficionados rate his twin set of miniatures depicting a sword-bearing Judith returning from the camp of Holofernes and the discovery of the decapitated Holofernes in his tent (1495–1500) as being among his finest works. Northern Influences Don't miss the Adorazione dei Magi (Adoration of the Magi; 1475) featuring Botticelli's self-portrait (look for the blond-haired guy, extreme right, dressed in yellow), tucked away in Room 15 alongside Botticelli's Coronation of the Virgin (1488–90) and works by Flemish painter Hugo van der Goes (1430–82). Study the altarpiece, painted by the latter for the church inside Florence's Santa Maria Novella hospital, to observe the clear influence artists in northern Europe had on Florentine artists. La Tribuna The Medici clan stashed away their most precious masterpieces in this exquisite octagonal-shaped treasure trove (Room 18), created by Francesco I between 1581 and 1586. Designed to amaze and perfectly restored to its original exquisite state, a small collection of classical statues and paintings adorn its walls, upholstered in crimson silk, and 6000 mother-of-pearl shells painted with crimson varnish encrust the domed ceiling. Elsewhere in Italy: 15th Century The final rooms in the Primo Corridoio (First Corridor), Rooms 19 to 23, delve into the work of painters in Siena, Venice, Emilia-Romagna and Lombardy in the 15th century. As compelling as the art strung on the walls are the ornate vaulted ceilings here, frescoed in the 16th and 17th centuries with military objects, allegories, battles and festivals held on piazzas in Florence. High Renaissance to Mannerism Passing through the loggia or Secondo Corridoio (Second Corridor), visitors enjoy wonderful views of Florence before entering the Terzo Corridoio (Third Corridor). Rooms 33 and 34, with sage-green painted walls, evoke the artistic environment in which a young Michelangelo lived and worked in Florence. They display sculptures from classical antiquity, of great influence on the aspiring sculptor, and from the Medici-owned sculpture garden in San Marco where Michelangelo studied classical sculpture as an apprentice from the age of 13. The master himself, Michelangelo, dazzles with the Doni Tondo, a depiction of the Holy Family that steals the High Renaissance show in Room 35. The composition is unusual – Joseph holding an exuberant Jesus on his muscled mother's shoulder as she twists round to gaze at him, the colours as vibrant as when they were first applied in 1506–08. It was painted for wealthy Florentine merchant Agnolo Doni (who hung it above his bed) and bought by the Medicis for Palazzo Pitti in 1594. 1st-Floor Galleries Head downstairs to the 1st-floor galleries where Rooms 46 to 55 display the Uffizi's collection of 16th- to 18th-century works by foreign artists, including Rembrandt (Room 49); Rubens and Van Dyck share Room 55. The next room gives a nod to antique sculpture, before moving back into the 16th century with Andrea del Sarto (Rooms 57 and 58) and Räphael (Room 66), whose Madonna del cardellino (Madonna of the Goldfinch; 1505–06) steals the show. Räphael painted it during his four-year sojourn in Florence. Room 65 is dedicated to Medici portrait artist, Agnolo Bronzino (1503–72), who worked at the court of Cosimo I from 1539 until 1555 (when he was replaced by Vasari). His 1545 portraits of the Grand Duchess Eleonora of Toleto and her son Giovanni together, and the 18-month-old Giovanni alone holding a goldfinch – symbolising his calling into the Church – are considered masterpieces of 16th-century European portraiture. Giovanni was indeed elected a cardinal in 1560, but died of malaria two years later. As part of the seemingly endless New Uffizi expansion project, four early Florentine works by Leonardo da Vinci are currently displayed in Room 79. (In due course, Leonardo could well be shifted back upstairs to the 2nd floor.) His Annunciazione (Annunciation; 1472) was deliberately painted to be admired, not face on (from where Mary's arm appears too long, her face too light, the angle of buildings not quite right), but rather from the lower right-hand side of the painting. After a five-year restoration, Adoration of the Magi (1481–82), originally commissioned for the altar of the monastery of San Donato a Scopeto, near Florence, has returned to the gallery and is typical of Florentine figurative painting in the 15th century. Rooms 96 to 99, with their burgundy red walls, feature works by Caravaggio, deemed vulgar at the time for his direct interpretation of reality. The Head of Medusa (1598–99), commissioned for a ceremonial shield, is supposedly a self-portrait of the young artist who died at the age of 39. The biblical drama of an angel steadying the hand of Abraham as he holds a knife to his son Isaac's throat in Caravaggio's Sacrifice of Isaac (1601–02) is glorious in its intensity.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/47dbfd6ec77fe46ed97ba7a0e144a94a-galleria-degli-uffizi.jpg"
+      },
+      {
+        "title": "Duomo",
+        "description": "Florence's Duomo is the city's most iconic landmark. Capped by Filippo Brunelleschi's red-tiled cupola, it's a staggering construction whose breathtaking pink, white and green marble facade and graceful campanile (bell tower) dominate the Renaissance cityscape. Sienese architect Arnolfo di Cambio began work on it in 1296, but construction took almost 150 years and it wasn't consecrated until 1436. In the echoing interior, look out for frescoes by Vasari and Zuccari and up to 44 stained-glass windows. The Duomo's neo-Gothic facade was designed in the 19th century by architect Emilio de Fabris to replace the uncompleted original, torn down in the 16th century. The oldest and most clearly Gothic part of the cathedral is its south flank, pierced by Porta dei Canonici (Canons' Door), a mid-14th-century High Gothic creation (you enter here to climb up inside the dome). After the visual wham-bam of the facade, the sparse decoration of the cathedral's vast interior, 155m long and 90m wide, comes as a surprise – most of its artistic treasures have been removed over the centuries according to the vagaries of ecclesiastical fashion, and many are on show in the Museo dell’Opera del Duomo. The interior is also unexpectedly secular in places (a reflection of the sizeable chunk of the cathedral not paid for by the church): down the left aisle two immense frescoes of equestrian statues portray two condottieri (mercenaries) – on the left Niccolò da Tolentino by Andrea del Castagno (1456), and on the right Sir John Hawkwood (who fought in the service of Florence in the 14th century) by Uccello (1436). Between the left (north) arm of the transept and the apse is the Sagrestia delle Messe (Mass Sacristy), its panelling a marvel of inlaid wood carved by Benedetto and Giuliano da Maiano. The fine bronze doors were executed by Luca della Robbia – his only known work in the material. Above the doorway is his glazed terracotta Resurrezione (Resurrection). A stairway near the main entrance of the cathedral leads down to the cathedral gift shop and Cripta Santa Reparata, the crypt where excavations between 1965 and 1974 unearthed parts of the 5th-century Chiesa di Santa Reparata that originally stood on the site. Should you be visiting on Sunday (when the crypt is closed), know your combined Duomo ticket is valid 48 hours.",
+        "image": "https://lonelyplanetimages.imgix.net/assets/image/7b41af796210d0d599d087258fd1ac00dd1f1df2e450862c328c6e7b7ffa0f9e/4b52921a0632453dcac852498c23c41d508003babde4526a860514a499dc3f13.jpg"
+      },
+      {
+        "title": "Museo di San Marco",
+        "description": "At the heart of Florence's university area sits Chiesa di San Marco and an adjoining 15th-century Dominican monastery where both gifted painter Fra' Angelico (c 1395–1455) and the sharp-tongued Savonarola piously served God. Today the monastery, aka one of Florence's most spiritually uplifting museums, showcases the work of Fra' Angelico. After centuries of being known as 'Il Beato Angelico' (literally 'The Blessed Angelic One') or simply 'Il Beato' (The Blessed), the Renaissance's most blessed religious painter was made a saint by Pope John Paul II in 1984. Enter via Michelozzo's Chiostro di Sant' Antonio (Saint Antoninus Cloister; 1440). Turn immediately right to enter the Sala dell'Ospizio dei Pellegrini (Pilgrims' Hospital Hall) where Fra' Angelico's attention to perspective and the realistic portrayal of nature come to life in a number of major paintings, including the Deposition from the Cross (1432). Giovanni Antonio Sogliani's fresco The Miraculous Supper of St Domenic (1536) dominates the former monks' Refettorio (Refectory) in the cloister. Fra' Angelico's huge Crucifixion and Saints fresco (1441–42), featuring all the patron saints of the convent and city, plus the Medici family who commissioned the fresco, decorates the former Capitolo (Chapterhouse). But it is the 44 monastic cells on the 1st floor that are the most haunting: at the top of the stairs, Fra' Angelico's most famous work, Annunciation (c 1440), commands all eyes. A stroll around each of the cells reveals snippets of many more religious reliefs by the Tuscan-born friar, who decorated the cells between 1440 and 1441 with deeply devotional frescoes to guide the meditation of his fellow friars. Most were executed by Fra' Angelico himself, with others by aides under his supervision, including Benozzo Gozzoli. Among several masterpieces is the magnificent Adoration of the Magi in the cell used by Cosimo the Elder as a meditation retreat (Nos 38 to 39); only 10 people can visit at a time. The frescoes in the cell of San Antonino Arcivescovo (neighbouring Fra' Angelico's Annunication) are gruesome: they show Jesus pushing open the door of his sepulchre, squashing a nasty-looking devil in the process. Contrasting with the pure beauty of these frescoes are the plain rooms (Cell VI) that Savonarola called home from 1489. Rising to the position of prior at the Dominican convent, it was from here that the fanatical monk railed against luxury, greed and corruption of the clergy. Kept as a kind of shrine to the turbulent priest, the three small rooms house a portrait, a few personal items, fragments of the black cape and white tunic Savonarola wore, his rosary beads and the linen banner he carried in processions, and a grand marble monument erected by admirers in 1873.",
+        "image": "https://lonelyplanetimages.imgix.net/assets/image/b8d03e3b0e9ddcb80150a97186653db0849286989b524562a99f012d6003db1d/e1146edbd4340d2ea3cfeb844568e787a59174c206e49bb3f74dfe5a68ef5f8a.jpg"
+      },
+      {
+        "title": "Museo delle Cappelle Medicee",
+        "description": "Nowhere is Medici conceit expressed so explicitly as in the Medici Chapels. Adorned with granite, marble, semi-precious stones and some of Michelangelo's most beautiful sculptures, it is the burial place of 49 dynasty members. Francesco I lies in the dark, imposing Cappella dei Principi (Princes' Chapel) alongside Ferdinando I and II and Cosimo I, II and III. Lorenzo il Magnifico is buried in the graceful Sagrestia Nuova (New Sacristy), which was Michelangelo's first architectural work. It is also in the sacristy that you can swoon over three of Michelangelo's most haunting sculptures: Dawn and Dusk on the sarcophagus of Lorenzo, Duke of Urbino; Night and Day on the sarcophagus of Lorenzo's son Giuliano (note the unfinished face of 'Day' and the youth of the sleeping woman drenched in light aka 'Night'); and Madonna and Child, which adorns Lorenzo's tomb.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/3166068ed86934d6df514bea0468a0ec-cappelle-medicee.jpg"
+      }
     ]
   },
   {
     "name": "Naples",
-    "bg_image": "",
-    "title": "",
-    "description": "",
-    "mustVisit": [
+    "country" : "Italy",
+    "bg_image": "https://lonelyplanetimages.imgix.net/mastheads/GettyImages-160593648_high.jpg",
+    "title": "Welcome to Naples",
+    "description": [
       {
         "title": "",
-        "description": "",
-        "image": ""
+        "description": "Naples is raw, high-octane energy, a place of soul-stirring art and panoramas, spontaneous conversations and unexpected, inimitable elegance. Welcome to Italy's most unlikely masterpiece."
+      },
+      {
+        "title": "Art & Architecture",
+        "description": "Naples' wealth of cultural assets is extraordinary. You'll find two royal palaces, three castles, and ancient ruins that include some of Christianity's oldest frescoes. The city's Museo Archeologico Nazionale claims the world's finest collection of Pompeiian frescoes and mosaics, while its Cappella Sansevero holds Italy's most extraordinary marble sculpture. You'll find Caravaggio masterpieces in the Pio Monte della Misericordia, Palazzo Zevallos Stigliano and Palazzo Reale di Capodimonte, the latter palace home to countless masterpieces. Of course, we could also mention all those frescoed baroque cupolas, but that would just be boasting."
+      },
+      {
+        "title": "History & Legend",
+        "description": "Naples' millennia-old backstory could bust a bookshelf. Settled by the Greeks and conquered by the Romans, it's a nail-biting tale where myth and fact entwine into one bewitching whole. Did Queen Joan II really throw her lovers to a peckish crocodile in the Castel Nuovo? Do the skulls inside the Cimitero delle Fontanelle have esoteric powers? And just how did alchemist prince Raimondo di Sangro create those inexplicably perfect arterial systems inside his Cappella Sansevero? Curious tales and unsolved mysteries seep out of every Neapolitan stone, casting a strange, hypnotic spell."
+      },
+      {
+        "title": "Glorious Food",
+        "description": "Blessed with rich volcanic soils, a bountiful sea, and countless generations of culinary know-how, the Naples region is one of Italy's epicurean heavyweights. It's here that you'll find the country's best pizza, pasta and espresso, its most appetising street markets, not to mention some of its most celebrated dishes. From garlicky spaghetti alle vongole (spaghetti with clams) to sultry ragù (meat and tomato sauce) and silky parmigiana di melanzane (eggplant parmigiana), the food on these streets is all about intensity and pleasure. After all, life is too short for diets, so follow the locals' lead and succumb to your gluttonous whims."
+      },
+      {
+        "title": "Idiosyncratic Shopping",
+        "description": "In Naples, retail therapy is as individualistic as the city itself. Here, global chains still play second fiddle to family-run businesses and artisan workshops. Neapolitan tailors have long lured foreign dandies with their impeccable suits, shirts and ties, while the city's handmade leather gloves are sought by the global fashion royalty. Skinny streets and weathered courtyards are dotted with a plethora of workshops and boutiques, selling everything from butter-soft satchels, organic ceramics and meticulous pastori (nativity-scene figurines), to rare Neapolitan lithographs and gourmet local food and wine. Leave plenty of room in your suitcase."
+      }
+    ],
+    "mustVisit": [
+      {
+        "title": "Palazzo Reale di Capodimonte",
+        "description": "Originally designed as a hunting lodge for Charles VII of Bourbon, this monumental palace was begun in 1738 and took more than a century to complete. It's now home to the Museo Nazionale di Capodimonte, southern Italy's largest and richest art gallery. Its vast collection – much of which Charles inherited from his mother, Elisabetta Farnese – was moved here in 1759 and ranges from exquisite 12th-century altarpieces to works by Botticelli, Caravaggio, Titian and Warhol. The gallery is spread over three floors and 160 rooms; for most people, a full morning or afternoon is enough for an abridged best-of tour. The 1st floor includes works by greats such as Michelangelo, Raphael and Titian, with highlights including Masaccio’s Crocifissione (Crucifixion), Botticelli's Madonna col Bambino e due angeli (Madonna with Child and Angels), Bellini’s Trasfigurazione (Transfiguration) and Parmigianino’s Antea, all of which are subject to room changes within the museum. The floor is also home to the royal apartments, a study in regal excess. The Salottino di Porcellana (Room 52) is an outrageous example of 18th-century chinoiserie, its walls and ceiling dense with whimsically themed porcelain ‘stucco’. Originally created between 1757 and 1759 for the Palazzo Reale in Portici, it was transferred to Capodimonte in 1867. Upstairs, the 2nd-floor galleries display work by Neapolitan artists from the 13th to the 19th centuries, including de Ribera, Giordano, Solimena and Stanzione. It's also home to some spectacular 16th-century Belgian tapestries. The piece that many come to see, however, is Caravaggio’s Flagellazione (Flagellation of Christ; 1607–10), which hangs in reverential solitude in Room 78. Rooms 88 to 95 are dedicated to paintings of the Neapolitan baroque period. Accessed from the 2nd floor, a small mezzanine level hosts a rotating selection of modern works from artists including Andy Warhol, Mimmo Jodice and John Armleder. Once you've finished in the museum, the Parco di Capodimonte – the palace's 134-hectare estate – provides a much-needed breath of fresh air. The museum offers a convenient, hourly shuttle bus service – Shuttle Capodimonte – that runs between central Naples and the museum. Buses depart from Piazza Trieste e Trento (opposite Teatro San Carlo) and stop at Piazza Dante and the Museo Archeologico Nazionale en route. Tickets (which include museum entry) can be purchased directly on the bus.",
+        "image": "https://lonelyplanetimages.imgix.net/mastheads/GettyImages-183571286_super.jpg"
+      },
+      {
+        "title": "Ruins of Pompeii",
+        "description": "The ghostly ruins of ancient Pompeii (Pompei in Italian) make for one of the world's most engrossing archaeological experiences. Much of the site's value lies in the fact that the town wasn't simply blown away by Vesuvius in AD 79 but buried under a layer of lapilli (burning fragments of pumice stone). The result is a remarkably well-preserved slice of ancient life, where visitors can walk down Roman streets and snoop around millennia-old houses, temples, shops, cafes, amphitheatres and even a brothel. The origins of Pompeii are uncertain, but it seems likely that it was founded in the 7th century BC by the Campanian Oscans. Over the next seven centuries, the city fell to the Greeks and the Samnites before becoming a Roman colony in 80 BC. In AD 62, a mere 17 years before Vesuvius erupted, the city was struck by a major earthquake. Damage was widespread and much of the city's 20,000-strong population was evacuated. Fortunately, many had not returned by the time Vesuvius blew, but 2000 men, women and children perished nevertheless. After its catastrophic demise, Pompeii receded from the public eye until 1594, when the architect Domenico Fontana stumbled across the ruins while digging a canal. Exploration proper, however, didn't begin until 1748. Of Pompeii's original 66 hectares, 44 have now been excavated. Of course that doesn't mean you'll have unhindered access to every inch of the Unesco-listed site – expect to come across areas cordoned off for no apparent reason, a noticeable lack of clear signs, and the odd stray dog. Audio guides are a sensible investment (€8) and a good guidebook will also help – try Pompeii, published by Electa Napoli. Maintenance work is ongoing, but progress is often beset by political, financial and bureaucratic problems.",
+        "image": "https://lonelyplanetimages.imgix.net/assets/image/4917c17ba4b8f02ecd6754cac2a8ce05b9be851552709ddca39b4f767ebcf827/0d0690880033a9213a983ab676a576c05902364fbe35cff8c53549690967ff27.jpg"
+      },
+      {
+        "title": "Cappella Sansevero",
+        "description": "It's in this Masonic-inspired baroque chapel that you'll find Giuseppe Sanmartino's incredible sculpture, Cristo velato (Veiled Christ), its marble veil so realistic that it's tempting to try to lift it and view Christ underneath. It's one of several artistic wonders that include Francesco Queirolo's sculpture Disinganno (Disillusion), Antonio Corradini's Pudicizia (Modesty) and riotously colourful frescoes by Francesco Maria Russo, the latter untouched since their creation in 1749. Originally built around the end of the 16th century to house the tombs of the di Sangro family, the chapel was given its current baroque fit-out by Prince Raimondo di Sangro, who, between 1749 and 1766, commissioned the finest artists to adorn the interior. In Queirolo's Disinganno, the man trying to untangle himself from a net represents Raimondo's father, Antonio, Duke of Torremaggiore. After the premature death of his wife, Antonio abandoned the young Raimondo, choosing instead a life of travel and hedonistic pleasures. Repentant in his later years, he returned to Naples and joined the priesthood, his attempt to free himself from sin represented in Queirolo's masterpiece. Even more poignant is Antonio Corradini's Pudicizia, whose veiled female figure pays tribute to Raimondo's mother, Cecilia Gaetani d’Aquila d’Aragona. Raimondo was only 11 months old when she died, and the statue's lost gaze and broken plaque represent a life cruelly cut short. The chapel's original polychrome marble flooring was badly damaged in a major collapse involving the chapel and the neighbouring Palazzo dei di Sangro in 1889. Designed by Francesco Celebrano, the flooring survives in fragmentary form in the passageway leading off from the chapel's right side. The passageway leads to a staircase, at the bottom of which you'll find two meticulously preserved human arterial systems – one of a man, the other of a woman. Debate still circles the models: are the arterial systems real or reproductions? And if they are real, just how was such an incredible state of preservation achieved? More than two centuries on, the mystery surrounding the alchemist prince and his abilities lives on. Queues here can be notoriously long so consider purchasing your ticket online in advance for fast-track entry into the chapel; it's worth the extra €2 booking fee, especially during peak holiday periods.",
+        "image": "https://lonelyplanetimages.imgix.net/mastheads/shutterstock_198444776.jpg"
+      },
+      {
+        "title": "Certosa e Museo di San Martino",
+        "description": "The high point (quite literally) of the Neapolitan baroque, this charterhouse-turned-museum was built as a Carthusian monastery between 1325 and 1368. Centred on one of the most beautiful cloisters in Italy, it has been decorated, adorned and altered over the centuries by some of Italy’s finest talent, most importantly architect Giovanni Antonio Dosio in the 16th century and baroque sculptor Cosimo Fanzago a century later. Nowadays, it’s a superb repository of Neapolitan and Italian artistry. The monastery’s church and the sacristy, treasury and chapter house that flank it contain a feast of frescoes and paintings by some of Naples’ greatest 17th-century artists, among them Battista Caracciolo, Jusepe de Ribera, Guido Reni and Massimo Stanzione. In the nave, Cosimo Fanzago’s inlaid marble work is simply extraordinary. Adjacent to the church, the Chiostro dei Procuratori is the smaller of the monastery’s two cloisters. A grand corridor on the left leads to the larger Chiostro Grande (Great Cloister). Originally designed by Dosio in the late 16th century and added to by Fanzago, it’s a sublime composition of Tuscan-Doric porticoes, marble statues and vibrant camellias. The balustrade marks the Certosa's small cemetery, adorned with skulls created by Fanzago. Just off the Chiostro dei Procuratori, the Sezione Navale documents the history of the Bourbon navy from 1734 to 1860, and features a small yet extraordinary collection of royal barges. The Sezione Presepiale – which faces the refectory – houses a whimsical collection of rare Neapolitan presepi (nativity scenes) from the 18th and 19th centuries, including the colossal 19th-century Cuciniello creation, which covers one wall of what used to be the monastery’s kitchen. The Quarto del Priore in the southern wing houses the bulk of the monks' historic picture collection, as well as one of the museum’s most famous sculptures, the tender Madonna col Bambino e San Giovannino (Madonna and Child with the Infant John the Baptist). The pieces is the work of Pietro Bernini, father of the more famous Gian Lorenzo Bernini. Also noteworthy is a statue of St Francis of Assisi by 18th-century master sculptor Giuseppe Sanmartino, creator of the Cristo velato (Veiled Christ) housed in Naples' Cappella Sansevero. A pictorial history of Naples is told in Immagini e Memorie della Città e del Regno (Images and Memories of the City and Kingdom of Naples). Here you’ll find portraits of historic characters; antique maps, including a 35-panel copper map of 18th-century Naples in Room 45; and rooms dedicated to major historical events such as the eruption of Mt Vesuvius and the Revolt of the Masaniello (Room 36) and the plague (Room 37). Room 32 boasts the beautiful Tavola Strozzi (Strozzi Table); its fabled depiction of maritime Naples in the second half of the 15th century is one of the city’s most celebrated historical records. It's worth noting that some sections of the museum are only open at various times of the day; see the website for specific times. Below the Certosa is the imposing Sotterranei Gotici (Gothic basement). The austere vaulted space holds around150 marble sculptures and epigraphs. Guided tours (in Italian) of the Sotterranei Gotici usually take place at 11.30am on Saturday and Sunday and must be reserved about two weeks in advance by emailing accoglienza.sanmartino@beniculturali.it. Unfortunately, tours were suspended indefinitely in 2017; contact the museum for updates.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/9601e0f728e55d11efd3a8fceb7e7dde-certosa-e-museo-di-san-martino.jpg"
       }
     ]
   },
   {
     "name": "Verona",
-    "bg_image": "",
-    "title": "",
-    "description": "",
-    "mustVisit": [
+    "country" : "Italy",
+    "bg_image": "https://lonelyplanetimages.imgix.net/mastheads/53604164.jpg",
+    "title": "Welcome to Verona",
+    "description": [
       {
         "title": "",
-        "description": "",
-        "image": ""
+        "description": "Best known for its Shakespeare associations, Verona attracts a multinational gaggle of tourists to its pretty piazzas and knot of lanes, most in search of Romeo, Juliet and all that. But beyond the heart-shaped kitsch and Renaissance romance, Verona is a bustling centre, its heart dominated by a mammoth, remarkably well-preserved 1st-century amphitheatre, the venue for the city's annual summer opera festival. Add to that countless churches, a couple of architecturally fascinating bridges over the Adige, regional wine and food from the Veneto hinterland and some impressive art, and Verona shapes up as one of northern Italy's most attractive cities. And all this just a short hop from the shores of stunning Lake Garda."
+      }
+    ],
+    "mustVisit": [
+      {
+        "title": "Museo di Castelvecchio",
+        "description": "Bristling with fishtail battlements along the River Adige, Castelvecchio was built in the 1350s by Cangrande II. Severely damaged by Napoleon and WWII bombings, the fortress was reinvented by architect Carlo Scarpa, who constructed bridges over exposed foundations, filled gaping holes with glass panels, and balanced a statue of Cangrande I above the courtyard on a concrete gangplank. The complex is now home to a diverse collection of statuary, frescoes, jewellery, medieval artefacts and paintings. Scarpa's modern remodelling of the interior comes as a surprise after the austere medieval exterior and provides a contrasting backdrop for the exhibits. Highlights include some wonderful 14th-century glass, the Pisanello room with its well-preserved frescoes, the collection of Flemish art and works by Renaissance Veronese and Venetian painters. Look out for the Cangrande coat of arms throughout – Cangrande means 'Top Dog' and the family's comedy shield features two dogs climbing a ladder! After viewing the exhibition, clamber out onto the ramparts for views of the river and old city defences.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/8e07b5b92513756e5e0ad5478942427a-museo-di-castelvecchio.jpg"
+      },
+      {
+        "title": "Giardino Giusti",
+        "description": "Across the river from the historic centre, these sculpted gardens are considered a masterpiece of Renaissance landscaping, and named after the noble family that has tended them since opening the gardens to the public in 1591. The vegetation is an Italianate mix of the manicured and natural, graced by soaring cypresses, one of which the German poet Goethe immortalised in his travel writings. According to local legend, lovers who manage to find each other in the gardens' petite labyrinth are destined to stay together. If you do, whisper sweet nothings while gazing out at the city from the belvedere (lookout), accessed from the back of the gardens. Forget the Casa di Giulietta, this is where the real romance is in Verona.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/05725dc2595f706ab10777e0d1389272-giardino-giusti.jpg?fit=crop&w=1920&h=832"
       }
     ]
   },
   {
     "name": "Turin",
-    "bg_image": "",
-    "title": "",
-    "description": "",
-    "mustVisit": [
+    "country" : "Italy",
+    "bg_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Torino_Mole_Piemonte_Italy_Landscape_Travel.jpg/1200px-Torino_Mole_Piemonte_Italy_Landscape_Travel.jpg",
+    "title": "Welcome to Turin",
+    "description": [
       {
         "title": "",
-        "description": "",
-        "image": ""
+        "description": "There's a whiff of Paris in Turin's elegant tree-lined boulevards and echoes of Vienna in its stately art nouveau cafes, but make no mistake – this elegant, Alp-fringed city is utterly self-possessed. The industrious Torinese gave the world its first saleable hard chocolate and Italy's most iconic car, the Fiat."
+      },
+      {
+        "title": "",
+        "description": "Its now booming contemporary art and architecture, live-music scene and innovative food and wine culture are definitely aspects you'll want to discover."
       }
+    ],
+    "mustVisit": [
+      {
+        "title": "Museo Egizio",
+        "description": "Opened in 1824 and housed in the austere Palazzo dell'Accademia delle Scienze, this Turin institution houses the most important collection of Egyptian treasure outside Cairo. Among its many highlights are a statue of Ramses II (one of the world's most important pieces of Egyptian art) and a vast papyrus collection. There are also 500 funerary and domestic items from the tomb of royal architect Kha and his wife Merit, dating to 1400 BC and found in 1906. Both anthropomorphic coffins are incredibly moving, but Merit's image, rendered in cartonnage (layers of plaster and linen), gold leaf and glass inlays, is one of the most hauntingly beautiful ever displayed. A major renovation was completed in 2015 and, although the old museum's rambling rooms had their dusty charm, the new minimalist spaces almost double the amount of the collection available for public display. Modern museological techniques – splicing in documentary photographs and films about the early 20th-century digs, dramatic lighting and a well-articulated chronological narrative – make for an absorbing experience.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/f78615cafacd1b4f6bddf6d54a394af3-museo-egizio.jpg"
+      }      
+    ]
+  },
+  {
+    "name": "Toulouse",
+    "country" : "France",
+    "bg_image": "https://media.aircorsica.com/sites/default/files/styles/main_image/public/2017-07/destinations-toulouse-2.jpg?itok=AIYF6r62",
+    "title": "Welcome to Toulouse",
+    "description": [
+      {
+        "title": "",
+        "description": "Ochre rooftops and blushing brick churches earned Toulouse the nickname ‘La Ville Rose’ (The Pink City). Its enchanting Vieux Quartier (Old Quarter) is a dreamy jumble of coral-coloured shopfronts and churches. Beyond the old town, Toulouse sprawls into France’s fourth-largest metropolis. It’s an animated, hectic place, but Toulouse – nestled between a bend in the Garonne River and the mighty Canal du Midi – is invigorated by its waterways"
+      },
+      {
+        "title": "",
+        "description": "Toulouse has one of the largest universities outside Paris: at its core this southwestern French city is home to students and scientists. French aeronautical history continues in the Airbus factory outside town. But Toulouse knows how to have a good time, whether in teeming food markets, salons de thé or the thick of its smouldering jazz, techno and rock scenes. From the tips of dusky pink spires to its loudest bars, time spent in Toulouse truly has a rose-tinted sheen."
+      }
+    ],
+    "mustVisit": [
+      {
+        "title": "Couvent des Jacobins",
+        "description": "This elegant ecclesiastical structure is the mother church of the Dominican order, founded in 1215. First admire the Église des Jacobins' ornate stained-glass windows before wandering through the Cloitre des Jacobins, in which graceful russet-brick columns surround a green courtyard. Pause in chapels and side rooms along the way, like the echoing Salle Capitulaire, a 14th-century hall ornamented with a haloed lamb and grisaille portraits of Dominican saints. Don't miss Chapelle St-Antonin, with its 14th-century ceiling frescoes showing apocalyptic scenes. St Thomas Aquinas (1225–74), the monk-philosopher and early head of the Dominican order, is buried beneath the church altar.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/364f55dbfa04236e5e2393754c4f6278-couvent-des-jacobins.jpg"
+      },
+      {
+        "title": "Place du Capitole",
+        "description": "Toulouse's magnificent main square is the city's literal and metaphorical heart, where Toulousiens turn out en masse on sunny evenings to sip a coffee or an early aperitif at a pavement cafe. On the eastern side is the 128m-long façade of the Capitole, the city hall, built in the 1750s. Inside is the Théâtre du Capitole, one of France's most prestigious opera venues, and the over-the-top, late-19th-century Salle des Illustres (Hall of the Illustrious). To the south of the square is the city's Vieux Quartier (Old Quarter), a tangle of lanes and leafy squares brimming with cafes, shops and eating options.",
+        "image": "https://www.kedgebs-alumni.com/images/ibrowser/capitole-toulouse.jpg"
+      },
+      {
+        "title": "Musée des Augustins",
+        "description": "Located within a former Augustinian monastery, this fine-arts museum spans the Roman era through to the early 20th century. Echoing stairwells and high-vaulted chambers are part of the fun, but artistic highlights include the French rooms – with some works by Delacroix, Ingres and Courbet – and works by Toulouse-Lautrec and Monet, among the standouts from the 20th-century collection. Don't skip the delightful 14th-century cloister gardens, with gurning gargoyle statues that seem to pose around the courtyard. Some rooms may be closed for renovation. ",
+        "image": "http://www.augustins.org/documents/10180/63770/03_Lieu_musee_aile_Dracy.jpg?t=1353250094628"
+      },
+      {
+        "title": "Cité de l’Espace",
+        "description": "The fantastic space museum on the city's eastern outskirts brings Toulouse's illustrious aeronautical history to life through hands-on exhibits, including a moon-running simulator, a rotating pod to test your tolerance for space travel, a planetarium and an observatory, plus a vast cinema to immerse you in a space mission. The showpieces are the full-scale replicas of iconic spacecraft, including the Mir space station and a 52m-high Ariane 5 space rocket. Since WWII, Toulouse has been the centre of France's aerospace industry, developing many important aircraft (including the Concorde and the 555-seat Airbus A380) as well as components for international space programs. To reach the museum, catch bus 15 from allée Jean Jaurès to the last stop, from where it's a 500m walk. To avoid queuing, buy your tickets in advance online.",
+        "image": "https://cdt31.media.tourinsoft.eu/upload/pano---M-Huynh-mod.jpg"
+      }     
+    ]
+  },
+  {
+    "name": "Nice",
+    "country" : "France",
+    "bg_image": "https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/France/Nice/Nice%2C%20france-xlarge.jpg",
+    "title": "Welcome to Nice",
+    "description": [
+      {
+        "title": "",
+        "description": "With its mix of real-city grit, old-world opulence, year-round sunshine, vibrant street life and stunning seaside location, no place in France compares with Nice."
+      },
+      {
+        "title": "Mediterranean Magnetism",
+        "description": "Before everything else, there was the sea, and the Mediterranean climate – the twin factors that made Nice a tourist magnet as early as the 1700s. Look around and you’ll find the same elemental attractions that drew Europe's belle-époque aristocrats to promenade along the waterfront in horse-drawn carriages. Even now, nothing compares to the simple joy of a balmy beach day interspersed with a spot of people-watching astride the Promenade des Anglais' famous blue chairs. Whether you're skating, kayaking, swimming, sprawled on a beach lounger or transfixed by sunset over the ever-present Med, it's all still happening by the water."
+      },
+      {
+        "title": "The Italian Influence",
+        "description": "For any lover of French and Italian culture, Nice is the perfect hybrid. Long affiliated with Piedmont and Liguria to the east, Savoy to the north and Sardinia to the south, this city only joined France in 1860 and has always kept one foot in Italy. The Italian influence remains palpable everywhere, in Vieux Nice's tall-shuttered, ochre-hued buildings that look airlifted straight in from Portofino, in the fresh pasta shops on every corner and even in the football cheer Issa Nissa! (Go Nice!), shouted in the local Nissart dialect that’s been coloured by Ligurian Italian as much as Occitan French."
+      },
+      {
+        "title": "City of Artists",
+        "description": "The Côte d'Azur has ensnared many a visitor with the beauty of its light. Not least Henri Matisse, who came here to convalesce from bronchitis. When the sun finally emerged after a month of wintry drizzle, Matisse was so smitten that he made Nice his home for the next 37 years. Chagall, Picasso and Renoir also fell in love with this place, and Nice was later home to the influential avant-garde École de Nice. Art museums abound throughout the region, but Nice's three superstars – the Musées Matisse, Chagall and d’Art Moderne – are reason enough to justify an aesthetic pilgrimage here."
+      },
+      {
+        "title": "Eating Niçois-Style",
+        "description": "Bring your appetite when you come to Nice. This city is meant for epicures. It all starts at Vieux Nice’s Saleya market, where small producers from the Alpine foothills bring in a bounty of fresh produce, and top chefs from surrounding restaurants shop right beside tourists. The city celebrates its uniqueness with street snacks like socca (chickpea pancakes), pissaladière (caramelised onion tart) or tourte de blettes (chard, raisin and pine nut pie), while its countless cosy bistros serve everything from hearty Provençal beef stew to true salade niçoise to pasta with pistou, and from fresh lemon tart to vegan cheesecake."
+      }
+    ],
+    "mustVisit": [
+      {
+        "title": "Cours Saleya Markets",
+        "description": "Split between its beautiful flower market and rightly famous food market. On Mondays, flowers and food make way for a flea market.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/c54bb8b207c0c3df980c875e702294c7-cours-saleya-markets.jpg"
+      },
+      {
+        "title": "Musée Matisse",
+        "description": "This museum, 2km north of the city centre in the leafy Cimiez quarter, houses a fascinating assortment of works by Matisse, including oil paintings, drawings, sculptures, tapestries and Matisse’s famous paper cut-outs. The permanent collection is displayed in a red-ochre 17th-century Genoese villa in an olive grove. Temporary exhibitions are in the futuristic basement building. Matisse is buried in the Monastère Notre Dame de Cimiez cemetery, across the park from the museum.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/0808d328be1bbf5e9d094aa8ea900efe-musee-matisse.jpg"
+      },
+      {
+        "title": "Promenade des Anglais",
+        "description": "The most famous stretch of seafront in Nice – if not France – is this vast paved promenade, which gets its name from the English expat patrons who paid for it in 1822. It runs for the whole 4km sweep of the Baie des Anges with a dedicated lane for cyclists and skaters; if you fancy joining them, you can rent skates, scooters and bikes from Roller Station. A more unusual way to cruise along is an electric Segway from Mobilboard Nice; the same agency also rents out bikes. Along the way, keep an eye out for a few of the promenade's landmarks, including the Hôtel Negresco, the art-deco Palais de la Méditerranée (1929) and Niçoise sculptor Sabine Géraudie’s giant iron sculpture La Chaise de SAB (2014), which pays homage to the city’s famous blue-and-white beach chairs. In 2015 the city of Nice submitted the Promenade des Anglais as a candidate for Unesco World Heritage status – the process can take up to 10 years to complete.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/bdf8e8edc110a61812472f67f0b8f318-promenade-des-anglais.jpg"
+      },
+      {
+        "title": "Colline du Château",
+        "description": "For the best views over Nice’s red-tiled rooftops, climb the winding staircases up to this wooded outcrop on the eastern edge of the old town. It’s been occupied since ancient times; archaeological digs have revealed Celtic and Roman remains, and the site was later occupied by a medieval castle that was razed by Louis XIV in 1706 (only the 16th-century Tour Bellanda remains). There are various entrances, including one beside the tower, or you can cheat and ride the free lift. At the top you’ll find plenty of green space and a wealth of stunning views over the old town, the port and inland to the Provençal hills all the way to the Alps. The shady trees offer welcome respite on a blazing hot day, and there’s also an artificial waterfall built during the 18th century.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/86955b38d5d88e812e8ea7b55cea19be-colline-du-chateau.jpg"
+      }     
+    ]
+  },
+  {
+    "name": "Strasbourg",
+    "country" : "France",
+    "bg_image": "https://images.ctfassets.net/zeaejvyq9bhj/mbjneZLrEc0C8UQiamOW4/ec124bc9c7ed52978e0aca1e65945cd3/strasbourg_petite_france_-_cphilippe_de_rexel.jpg",
+    "title": "Welcome to Strasbourg",
+    "description": [
+      {
+        "title": "",
+        "description": "Strasbourg is the perfect overture to all that is idiosyncratic about Alsace – walking a fine tightrope between France and Germany and between a medieval past and a progressive future, it pulls off its act in inimitable Alsatian style."
+      },
+      {
+        "title": "",
+        "description": "Tear your gaze away from that mesmerising Gothic cathedral for just a minute and you’ll be roaming the old town’s twisting alleys lined with crooked half-timbered houses à la Grimm; feasting in the cosiest of winstubs (Alsatian taverns) by the canals in Petite France; and marvelling at how a city that does Christmas markets and gingerbread so well can also be home to the glittering EU Quarter and France’s second-largest student population. But that’s Strasbourg for you: all the sweeter for its contradictions and cross-cultural quirks."
+      }
+    ],
+    "mustVisit": [
+      {
+        "title": "Cathédrale Notre-Dame",
+        "description": "Nothing prepares you for your first glimpse of Strasbourg's Cathédrale Notre-Dame, completed in all its Gothic grandeur in 1439. The lace-fine façade lifts the gaze little by little to flying buttresses, leering gargoyles and a 142m spire. The interior is exquisitely lit by 12th- to 14th-century stained-glass windows, including the western portal's jewel-like rose window. The Gothic-meets-Renaissance astronomical clock strikes solar noon at 12.30pm with a parade of figures portraying the different stages of life and Jesus with his apostles. Victor Hugo declared it a ‘gigantic and delicate marvel’; Goethe professed that its ‘loftiness is linked to its beauty’; and, no matter the angle or time of day, you too will be captivated by this red-sandstone monolith that is at once immense and intricate. A spiral staircase twists up to the 66m-high viewing platform, from which the tower and its Gothic openwork spire soar another 76m. As Hugo put it: ‘From the belfry, the view is wonderful. Strasbourg lays at your feet, the old city of tiled triangular roof tops and gable windows, interrupted by towers and churches as picturesque as those of any city in Flanders'. The west façade, most impressive if approached from rue Mercière, was completed in 1284, but the 142m spire – the tallest of its time – was not in place until 1439; its southern companion was never built. To appreciate the cathedral in peace, visit in the early evening, when the crowds have thinned, and stay to see its façade glow gold at dusk.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/6fc135ea2194f32c9609d23d109c81c5-cathedrale-notre-dame.jpg"
+      },
+      {
+        "title": "Petite France",
+        "description": "Criss-crossed by narrow lanes, canals and locks, Petite France is where artisans plied their trades in the Middle Ages. The half-timbered houses, sprouting veritable thickets of scarlet geraniums in summer, and the riverside parks attract the masses, but the area still manages to retain its Alsatian charm, especially in the early morning and late evening. Drink in views of the River Ill and the Barrage Vauban from the much-photographed Ponts Couverts and their trio of 13th-century towers. ",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/2321aadb9f6280111362c2352f2f9040-petite-france.jpg"
+      },
+      {
+        "title": "Musée de l’Œuvre Notre-Dame",
+        "description": "Occupying a cluster of sublime 14th- and 16th-century buildings, this museum harbours one of Europe’s premier collections of Romanesque, Gothic and Renaissance sculpture (including many originals from the cathedral), plus 15th-century paintings and stained glass. Christ de Wissembourg (c 1060) is the oldest work of stained glass in France. Hollywood gore seems tame compared to the tortures back when Hell really was hell. Sure to scare you into a life of chastity is Les Amants Trépassés (the Deceased Lovers), painted in 1470, showing a grotesque couple being punished for their illicit lust: the entrails of both are being devoured by dragon-headed snakes.",
+        "image": "https://www.tourisme-alsace.com/medias/Photos/visit/269000058/269000058_1.jpg"
+      },
+      {
+        "title": "Grande Mosquée de Strasbourg",
+        "description": "Designed by Italian architect Paolo Portoghesi and opened in September 2012, France's biggest mosque (accommodating 1500 worshippers) sits on a bend in the River Ill and is topped by a copper dome and flanked by wings resembling a flower in bud. More than just another landmark, it took 20 years of political to-ing and fro-ing for this project to come to fruition and its completion is considered the beginning of a new era for Muslims and religious tolerance in France.",
+        "image": "https://medias.liberation.fr/photo/720547-grande-mosquee-de-strasbourg.jpg"
+      }     
+    ]
+  },
+  {
+    "name": "Lille",
+    "country" : "France",
+    "bg_image": "https://cdn.tuifly.be/img/static/im1000/34400/34400/34400G.JPG",
+    "title": "Welcome to Lille",
+    "description": [
+      {
+        "title": "",
+        "description": "Capital of the Hauts-de-France région, Lille may be France's most underrated metropolis. Recent decades have seen the country's fourth-largest city (by greater urban area) transform from an industrial centre into a glittering cultural and commercial hub. Highlights include its enchanting old town with magnificent French and Flemish architecture, renowned art museums, stylish shopping, outstanding cuisine, a nightlife scene bolstered by 67,000 university students, and some 1600 designers in its environs."
+      }
+    ],
+    "mustVisit": [
+      {
+        "title": "Palais des Beaux Arts",
+        "description": "Inaugurated in 1892, Lille's illustrious Fine Arts Museum claims France's second-largest collection after Paris' Musée du Louvre. Its cache of sublime 15th- to 20th-century paintings include works by Rubens, Van Dyck and Manet. Exquisite porcelain and faience (pottery), much of it of local provenance, is on the ground floor, while in the basement you'll find classical archaeology, medieval statuary and 18th-century scale models of the fortified cities of northern France and Belgium. The free, interactive Visioguide app offers five itineraries through the museum. You can download the app to your smartphone at the ticket desk or via the website.",
+        "image": "https://media-cdn.sygictraveldata.com/media/800x600/612664395a40232133447d33247d3835383538343438"
+      },
+      {
+        "title": "Musée d'Art Moderne, d'Art Contemporain et d'Art Brut – LaM",
+        "description": "Colourful, playful and just plain weird works of modern and contemporary art by masters such as Braque, Calder, Léger, Miró, Modigliani and Picasso are the big draw at this renowned museum and sculpture park in the Lille suburb of Villeneuve-d'Ascq, 9km east of Gare Lille-Europe. Take metro line 1 to Pont de Bois, then bus L4 six stops to 'LaM'. ",
+        "image": "https://i.ytimg.com/vi/4C-Zaxamn1U/maxresdefault.jpg"
+      },
+      {
+        "title": "Le Tripostal",
+        "description": "Splashed with street art murals, this cavernous red-brick postal sorting centre was transformed into an arts centre in 2004, when Lille was the European Capital of Culture. Changing art and photography exhibitions (most free) usually feature local artists; there's also a bar, canteen-style restaurant, a kids' play area and a design shop. Look out too for events such as DJ sets, live music gigs and workshops.",
+        "image": "http://performance-exposition.com/data/img/tripostal.jpg"
+      },
+      {
+        "title": "Hôtel de Ville",
+        "description": "Built between 1924 and 1932, Lille's city hall is topped by a slender, 104m-high belfry that was designated a Unesco-listed monument in 2004. Climbing 100 steps leads to a lift that whisks you to the top for a stunning panorama over the town. An audioguide costs €2; binoculars are available for €1. Ring the doorbell to gain entry.",
+        "image": "http://www.lille-meeting.com/wp-content/uploads/2016/02/Hotel-de-Ville--Office-de-Tourisme-de-Lille.jpg"
+      }     
+    ]
+  },
+  {
+    "name": "Bordeaux",
+    "country" : "France",
+    "bg_image": "https://www.scenic.com.au/getattachment/river-cruises/france/bordeaux/city-tour.jpg",
+    "title": "Welcome to Bordeaux",
+    "description": [
+      {
+        "title": "Art & Architecture",
+        "description": "This is the world's largest urban World Heritage Site, cradling half the city (18 sq km) in its Unesco-listed treasure chest. From the elegant symmetry of place de la Bourse, palaces strung with stone-sculpted mascarons (faces), to tree-shaded boulevards laced with hôtels particuliers (mansions) built for 18th-century wine merchants, Bordeaux architecture is world-class. Contemporary architects continue the trend for excellence, with breathtakingly wild and beautiful creations resembling giant wine decanters, gleaming white pebbles, all sorts. An interesting portfolio of art museums embracing all periods and genres is the icing on the cake to this magnificent architectural heritage."
+      },
+      {
+        "title": "Riverside Riches",
+        "description": "Striding through Bordeaux on its leggy route north past traditional wine-producing chateaux to the Atlantic Ocean, the River Garonne is never far away. From this Gallo-Roman city's golden past as medieval wine trader and key port in Europe during the Age of Enlightenment, to the prestigious vineyards and vibrant quayside culture the river fuels today, the Garonne has been the city's lifeline since birth. Be it strolling, jogging or cycling along the silky-smooth water's edge in a loop from Left to Right Bank, lounging over drinks on a riverside terrace or cruising along the water, Bordeaux's riverside riches merit your full attention."
+      },
+      {
+        "title": "Gastronomy & Fine Wine",
+        "description": "This is a wine capital hemmed in by green, sun-drenched vineyards. Viticulture here is an ancient art and tradition bearing its own unique trademarks and no other vineyards in the world produce as much fine wine. Best up, from celebrated premiers crus aged for years to the very first vin nouveau cracked open at festivals after the autumnal harvest, dégustation (tasting) is an intrinsic part of daily life. Paired with the city's exceptional dining scene – a sassy mix of traditional French kitchens, experimental neobistros, creative fusion restaurants, food trucks and barista-run coffee shops – there is no tastier marriage. Santé!"
+      },
+      {
+        "title": "Bordelais Art de Vivre",
+        "description": "It's hard to believe that this was a city that fell under British rule for three hundred years (from the coronation of Henry of Aquitaine as King Henry II of England in 1152). Staunchly Bordelais to the last breath, Bordeaux enjoys an overwhelming sense of local pride and savoir faire. Innovation is her middle name and a high-spirited, university-student population bolsters the compelling undercurrent of creativity rippling through the city. Peppering a tramline with monumental pieces of contemporary art, partying in a WWII submarine bunker, and dancing on a barge at the industrial wet docks is all second nature to this natural bon vivant."
+      }
+    ],
+    "mustVisit": [
+      {
+        "title": "La Cité du Vin",
+        "description": "The complex world of wine is explored in depth at ground-breaking La Cité du Vin, a stunning piece of contemporary architecture resembling a wine decanter on the banks of the River Garonne. The curvaceous gold building glitters in the sun and its 3000 sq metres of exhibits are equally sensory and sensational. Digital guides lead visitors around 20 themed sections covering everything from vine cultivation, grape varieties and wine production to ancient wine trade, 21st-century wine trends and celebrated personalities. Tours end with a glass of wine – or grape juice for the kids – in panoramic Le Belvédère, with a monumental 30m-long bar and chandelier made out of recycled wine bottles, on the 8th floor. Temporary art exhibitions, cultural events and brilliant, themed one-hour tasting workshops (€15 to €25) are also worth watching out for. To get here, take tram B (direction Bassins à Flots) from Esplanade des Quinconnes, or walk 2.5km north along the river.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/874cd8d4c23685c9b70d43068893061b-la-cite-du-vin.jpg"
+      },
+      {
+        "title": "Cathédrale St-André",
+        "description": "The Cathédrale St-André, a Unesco World Heritage Site prior to the city's classification, lords over the city. The cathedral's oldest section dates from 1096; most of what you see today was built in the 13th and 14th centuries. Enjoy exceptional masonry carvings in the north portal. Even more imposing than the cathedral itself is the gargoyled, 50m-high Gothic belfry, Tour Pey Berland, erected between 1440 and 1466.",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/592016b77a1fd04612ebc82c0fd53dc8-cathedrale-st-andre.jpg"
+      },
+      {
+        "title": "La Base Sous-Marine",
+        "description": "By far the city's eeriest and most menacing sight, this mammoth hulk of a submarine base (1941–43) was one of five built on the Atlantic Coast by the Germans during the WWII. Designed as a bunker to protect German U-boats from aerial attack, it pens base proved impossible to destroy – by British forces during WWII and subsequently by the city, who now use the eyesore reinforced-concrete structure as a seriously cool, underground cultural centre, art gallery and music concert venue. The submarine base is only open during exhibitions and events. Check its Facebook page for details.",
+        "image": "https://images.sudouest.fr/2016/10/31/5817354d66a4bd9b5916bb3c/widescreen/1000x500/de-nombreux-bordelais-se-sont-plaints-des-vibrations-entendues-dans-la-nuit-de-vendredi-a-samedi-pendant-un-concert-a-la-base-sous-marine.jpg"
+      },
+      {
+        "title": "Basilique St-Michel",
+        "description": "This imposing Flamboyant Gothic church lies at the heart of St-Michel. Begun in the 14th century, it took more than 200 years to complete and is best known for its impressive stained glass. With the exception of those in the Chapelle de Mons, all the original windows were destroyed during WWII, but the 1960s stained-glass windows are truly dazzling. Like the cathedral, the 114m-tall bell tower – nicknamed La Flèche – stands apart from the church and can be climbed. Views are panoramic.",
+        "image": "https://medias.otbor.vm.aiprod.com/original/PCUAQU033FS0003N/0-41-Basilique-Saint-Michel-S.jpg"
+      }     
+    ]
+  },
+  {
+    "name": "Paris",
+    "country" : "France",
+    "bg_image": "http://europeanbusinessmagazine.com/wp-content/uploads/2017/07/paris.jpg",
+    "title": "Welcome to Paris",
+    "description": [
+      {
+        "title": "",
+        "description": "Paris' monument-lined boulevards, museums, classical bistros and boutiques are enhanced by a new wave of multimedia galleries, creative wine bars, design shops and tech start-ups."
+      },
+      {
+        "title": "Iconic Architecture",
+        "description": "The cloud-piercing, wrought-iron Eiffel Tower, broad Arc de Triomphe guarding the glamorous avenue des Champs-Élysées, gargoyled Notre Dame cathedral, lamplit bridges spanning the Seine and art nouveau cafes' wicker-chair-lined terraces are enduring Parisian emblems. Despite initial appearances, however, Paris’ cityscape isn’t static: there are some stunning modern and contemporary icons, too, from the inside-out, industrial-style Centre Pompidou to the mur végétal (vertical garden) gracing the Musée du Quai Branly, the glass sails of the Fondation Louis Vuitton contemporary-art centre, and the gleaming steel egg-shaped concert venue La Seine Musicale."
+      },
+      {
+        "title": "Glorious Food",
+        "description": "France’s reputation for its cuisine (the French word for ‘kitchen’) precedes it, and whether you seek a cosy neighbourhood bistro or a triple-Michelin-starred temple to gastronomy, you'll find that every establishment prides itself on exquisite preparation and presentation of quality produce, invariably served with wine. Enticing patisseries, boulangeries (bakeries), fromageries (cheese shops) and crowded, colourful street markets are perfect for putting together a picnic to take to the city’s beautiful parks and gardens. A host of culinary courses – held anywhere from home kitchens to the world’s most prestigious cookery schools – offers instruction for all schedules, abilities and budgets."
+      },
+      {
+        "title": "Stylish Shopping",
+        "description": "The word 'Parisian' is synonymous with style, and fashion shopping is the city’s forte. Paris remains at the forefront of international trends, and browsing emerging and established designer boutiques and flagship haute couture houses is a quintessential part of any visit. You’ll also find hip concept and homewares shops, and resplendent art nouveau department stores, along with a trove of vintage shops and flea markets, atmospheric bookshops and dark-green bouquiniste stalls stocking secondhand titles along the riverbanks, adorable children’s wear and toy shops, art and antique dealers, venerable establishments selling professional cookware, and, of course, gourmet-food and wine shops galore."
+      },
+      {
+        "title": "Artistic Treasures",
+        "description": "With an illustrious artistic pedigree – Renoir, Rodin, Picasso, Monet, Manet, Dalí and Van Gogh are but a few of the masters who have lived and worked here over the years – Paris is one of the world's great art repositories, harbouring treasures from antiquity onwards. In addition to big hitters like the incomparable Louvre, the Musée d’Orsay’s exceptional impressionist collection, and the Centre Pompidou’s cache of modern and contemporary art, scores of smaller museums showcase every imaginable genre, a diverse range of venues mount major exhibitions through to offbeat installations, and there's also the city's vibrant street art."
+      }
+    ],
+    "mustVisit": [
+      {
+        "title": "Eiffel Tower",
+        "description": "No one could imagine Paris today without it. But Gustave Eiffel only constructed this elegant, 320m-tall signature spire as a temporary exhibit for the 1889 World's Fair. Luckily, the art nouveau tower’s popularity assured its survival. Prebook online to avoid painfully long ticket queues. Lifts ascend to the tower’s three floors; change lifts on the 2nd floor for the final ascent to the top. Energetic visitors can climb as far as the 2nd floor via the south pillar’s 704 stairs (no prebooking). Refreshment options in the tower include two snack bars, the 1st-floor 58 Tour Eiffel, the sublime 2nd-floor Le Jules Verne, as well as a macaron bar and, at the top, a Champagne bar. Check the last entry time for the floor you wish to ascend to – it can be more than 90 minutes before the actual closing time in some cases. A 2.5m-high bulletproof glass wall around the tower was under construction in 2018 (the base is still free to visit after passing through the security checks) along with a renovated 2nd floor, all part of a 15-year, €300 million modernisation project to reduce queues, protect visitors waiting for the lifts from rain and snow, and improve facilities in general.",
+        "image": "https://lonelyplanetimages.imgix.net/mastheads/GettyImages-546212251_medium.jpg"
+      },
+      {
+        "title": "Arc de Triomphe",
+        "description": "If anything rivals the Eiffel Tower as the symbol of Paris, it’s this magnificent 1836 monument to Napoléon’s victory at Austerlitz (1805), which he commissioned the following year. The intricately sculpted triumphal arch stands sentinel in the centre of the Étoile (Star) roundabout. From the viewing platform on top of the arch (50m up via 284 steps and well worth the climb) you can see the dozen avenues. Av de la Grande Armée heads northwest to the skyscraper district of La Défense, where the Grande Arche marks the western end of the axe historique. The most famous of the four high-relief panels at the base is to the right, facing the arch from the av des Champs-Élysées side. It’s entitled Départ des Volontaires de 1792 (Departure of the Volunteers of 1792) and is also known as La Marseillaise (France’s national anthem). Higher up, a frieze running around the whole monument depicts hundreds of figures, each one 2m high. Beneath the arch at ground level lies the Tomb of the Unknown Soldier. The Unknown Soldier was laid to rest in 1921, in honour of the 1.3 million French soldiers who lost their lives in WWI. An eternal flame is rekindled daily at 6.30pm. To access the arch, don’t cross the traffic-choked roundabout above ground. Stairs lead from the northern side of the Champs-Élysées to pedestrian tunnels (not linked to the metro) that bring you out safely beneath the arch. Tickets to the viewing platform are sold in the tunnel.",
+        "image": "https://lonelyplanetimages.imgix.net/mastheads/GettyImages-544837009_full.jpg"
+      },
+      {
+        "title": "Cathédrale Notre Dame de Paris",
+        "description": "Paris' most visited unticketed site, with upwards of 14 million visitors per year, is a masterpiece of French Gothic architecture. The focus of Catholic Paris for seven centuries, its vast interior accommodates 6000 worshippers. Highlights include its three spectacular rose windows, treasury and bell towers, which can be climbed. From the North Tower, 400-odd steps spiral to the top of the western façade, where you’ll find yourself face-to-face with frightening gargoyles and a spectacular view of Paris. Inside, the central choir, with its carved wooden stalls and statues representing the Passion of the Christ, is noteworthy. The trésor (treasury) in the southeastern transept contains artwork, liturgical objects and first-class relics; the admission fee includes a handy audioguide. Among the treasures stashed here is the Ste-Couronne, the ‘Holy Crown’, which is purportedly the wreath of thorns placed on Jesus’ head before he was crucified, brought here in the mid-13th century. It’s exhibited between 3pm and 4pm on the first Friday of each month, 3pm to 4pm every Friday during Lent, and 10am to 5pm on Good Friday. One of the best views of the cathedral is from square Jean XXIII, the little park behind the cathedral, where you can better appreciate the forest of ornate flying buttresses that encircle the chancel and support its walls and roof. Don't miss the line-up of bells in the garden here: in 2013, to celebrate the 850th anniversary of construction beginning on Notre Dame, the cathedral was kitted out with nine new bells to compliment the original, 13-tonne bell Emmanuel (as tradition demands, cathedral bells are named).",
+        "image": "https://lonelyplanetimages.imgix.net/a/g/hi/t/7ac15ee1af8db7cba9af61e1491f8daf-cathedrale-notre-dame-de-paris.jpg"
+      },
+      {
+        "title": "Musée du Louvre",
+        "description": "It isn’t until you’re standing in the vast courtyard of the Louvre, with sunlight shimmering through the glass pyramid and crowds milling about beneath the museum’s ornate façade, that you can truly say you’ve been to Paris. Holding tens of thousands of works of art – from Mesopotamian, Egyptian and Greek antiquities to masterpieces by artists such as da Vinci (including his incomparable Mona Lisa), Michelangelo and Rembrandt – it’s no surprise that this is one of the world’s most visited museums. The Sully Wing is at the eastern end of the complex; the Denon Wing stretches 800m along the Seine to the south; and the northern Richelieu Wing parallels rue de Rivoli. Long before its modern incarnation, the vast Palais du Louvre originally served as a fortress constructed by Philippe-Auguste in the 12th century (medieval remnants are still visible on the lower ground floor, Sully); it was rebuilt in the mid-16th century as a royal residence in the Renaissance style. The Revolutionary Convention turned it into a national museum in 1793. The paintings, sculptures and artefacts on display in the Louvre have been amassed by subsequent French governments. Among them are works of art and artisanship from all over Europe and priceless collections of antiquities. The Louvre’s raison d’être is essentially to present Western art (primarily French and Italian, but also Dutch and Spanish) from the Middle Ages to about 1848 – at which point the Musée d’Orsay takes over – as well as works from ancient civilisations that formed the West's cultural foundations. When the museum opened in the late 18th century it contained 2500 paintings and objets d’art; the ‘Grand Louvre’ project inaugurated by the late president François Mitterrand in 1989 doubled the museum’s exhibition space, and both new and renovated galleries have opened in recent years devoted to objets d’art such as the crown jewels of Louis XV (Room 66, 1st floor, Apollo Gallery, Denon). The Islamic art galleries (lower ground floor, Denon) are in the restored Cour Visconti. The richness and sheer size of the place can be overwhelming. However, there’s an array of innovative, entertaining self-guided thematic trails (1½ hours; download trail brochures in advance from the website) ranging from a Louvre masterpieces trail to the art of eating, plus several for kids (hunt lions, galloping horses). Even better are the Louvre’s self-paced multimedia guides (€5). More formal, English-language guided tours depart from the Hall Napoléon, which has free English-language maps. For many, the star attraction is Leonardo da Vinci’s La Joconde, better known as Mona Lisa (Room 6, 1st floor, Denon). This entire section of the 1st floor of the Denon Wing, in fact, is hung with masterpieces – Rooms 75 and 77 have enormous French paintings from Ingres, Delacroix (Liberty Leading the People) and Géricault (The Raft of the Medusa), while Rooms 1, 3, 5 and 8 contain transcendent pieces by Raphael, Titian, Botticini and Botticelli. On the ground floor of the Denon Wing, take time for Michelangelo’s The Dying Slave and Canova's Psyche and Cupid (Room 4). Others, meanwhile, will prefer the treasures from antiquity: the Mesopotamia (ground floor, Richelieu) and Egypt (ground and 1st floors, Sully) collections are both superb. Highlights include the Code of Hammurabi (Room 3, ground floor, Richelieu) and The Seated Scribe (Room 22, 1st floor, Sully). The mosaics and figurines from the Byzantine Empire (lower ground floor, Denon), which merge into the state-of-the-art Islamic collection in the Cour Visconti, are also notable. Topping the list of ancient masterpieces are the armless Greek duo, the Venus de Milo (Room 16, ground floor, Sully) and the Winged Victory of Samothrace (top of Daru staircase, 1st floor, Denon). Also of note are the gilded-to-the-max Napoléon III Apartments (1st floor, Richelieu), Dutch masters Vermeer (Room 38, 2nd floor, Richelieu) and Rembrandt (Room 31, 2nd floor, Richelieu), and the 18th- and 19th-century French painting collection (2nd floor, Sully), which features iconic works like Ingres’ The Turkish Bath (off Room 60). The main entrance is through the 21m-high Grande Pyramide, a glass pyramid designed by the Chinese-born American architect IM Pei. If you don't have the Paris Museum Pass (which gives you priority), you can avoid the longest queues (for security) outside the pyramid by entering the Louvre complex via the underground shopping centre Carrousel du Louvre. You'll need to queue up again to buy your ticket once inside; buying tickets online (€2 surcharge) and renting a multimedia guide in advance will save you time. Tickets are valid for the whole day, so you can come and go as you please.",
+        "image": "https://lonelyplanetimages.imgix.net/mastheads/GettyImages-548231661_full.jpg"
+      }     
     ]
   }
 ];
 
 export default citiesData;
+

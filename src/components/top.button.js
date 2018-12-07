@@ -4,7 +4,6 @@ import { IoIosArrowUp } from 'react-icons/io';
 class TopButton  extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
       isVisibleTopBtn: false
     }    

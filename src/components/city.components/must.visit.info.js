@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 
 import './styles.city.scss';
 import TopButton from './../top.button';
-
  
 class MustVisitInfo extends Component {  
  
@@ -32,9 +31,5 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = dispatch => ({
-  
-})
-
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MustVisitInfo));
+export default withRouter(connect(mapStateToProps)(MustVisitInfo));
 

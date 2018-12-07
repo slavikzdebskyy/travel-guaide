@@ -33,13 +33,13 @@ class HeaderComponent extends Component {
       </header>
     );
   }
-}
+};
 
 const mapStateToProps = state => {
   return {
     location : state.currentLocation,
     backgroundImg: state.headerBackground
   };
-}
+};
 
 export default withRouter(connect(mapStateToProps)(HeaderComponent));
