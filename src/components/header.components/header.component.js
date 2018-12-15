@@ -26,10 +26,11 @@ class HeaderComponent extends Component {
         {
           !this.props.location.currentCountry ?
             <h1>
-              Choose the country which you are going to visit or about which you want to tell
+              Choose the country which you are going to visit
             </h1> :
           <Title location = {this.props.location}/>
         }       
+        
       </header>
     );
   }

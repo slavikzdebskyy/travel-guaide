@@ -6,7 +6,7 @@ import GoogleLogin from 'react-google-login';
 import './style.login.scss';
 
 const responseFacebook = response => {
-  console.log(response);
+  console.log('facebook => ', response);
 };
 
 const responseGoogle = response => {
