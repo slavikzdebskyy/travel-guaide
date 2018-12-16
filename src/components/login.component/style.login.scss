@@ -1,21 +1,61 @@
-@import '../../scss_modules/variables';
 @import '../../scss_modules/mixins';
 
-.login-container {  
-  @include flex(column, center, center);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(map-get($colors-main, black-col), 0.5);
+.login-container {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 100;
-  .login-form,
-  
-  .login-social {
-    @include flex(column, center, space-between);
-    width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #fff, $alpha: 0.7);
+  @include flex(column, center, center);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(218deg, #b84030, #b85e30, #b89430, #acb830, #76b830, #30b862, #30b89e, #30b4b8, #3096b8, #3066b8, #3c30b8, #8430b8, #b430b8);
+  background-size: 2600% 2600%;
+  animation: livebg 30s ease infinite;
+}
+
+.login-btn-container {
+  @include flex(column, center, space-around);
+  width: 300px;
+  padding: 20px;
+  position: relative;
+}
+.close-login-btn {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  z-index: 20;
+  font-size: 24px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+  color: red;
   }
 }
 
 
 
+.social-logo {
+  font-size: 30px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+  color: #fff;
+  &:hover {
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(-1.1deg)
+  }
+}
+button {
+    
+}
+
+
+@keyframes livebg { 
+  0%{background-position:0% 88%}
+  50%{background-position:100% 13%}
+  100%{background-position:0% 88%}
+}

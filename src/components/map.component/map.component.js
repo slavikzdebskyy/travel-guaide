@@ -14,7 +14,7 @@ class MapComponent extends Component {
   }
 
   goToCountry (countryName) {
-    this.props.history.push(countryName);
+    this.props.history.push(`${countryName}`);
   }
 
   render () {

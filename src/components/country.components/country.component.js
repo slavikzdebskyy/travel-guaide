@@ -16,7 +16,7 @@ import './styles.country.scss';
 
 class CountryComponent extends Component {
 
-  constructor (props) {
+  constructor (props) { 
     super (props)
     this.props.getCountry(this.props.match.params.country);
     this.props.getCities(this.props.match.params.country);

@@ -1,72 +1,70 @@
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
-import FacebookLogin from 'react-facebook-login';
-import GoogleLogin from 'react-google-login';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import FontAwesome from 'react-fontawesome';
+ 
+import SocialButton from './button';
+import toggleLoginModalAction from '../../redux/actions/toggle.login.action';
+import {GOOGLE_CLIENT_ID, FACEBOOK_APP_ID} from '../../social.config';
 
 import './style.login.scss';
+ 
+const handleSocialLogin = (user) => {
+  console.log(user)
+}
+ 
+const handleSocialLoginFailure = (err) => {
+  console.error(err)
+}
 
-const responseFacebook = response => {
-  console.log('facebook => ', response);
+ 
+const LoginComponent = (props) => (
+  <div className = 'login-container'>
+    <div className = 'login-btn-container'>
+      <FontAwesome 
+        name = 'times'
+        className = 'close-login-btn'     
+        onClick = {props.toggleLogin}
+      />
+      <SocialButton
+        provider = 'facebook'
+        appId = {FACEBOOK_APP_ID}
+        onLoginSuccess = {handleSocialLogin}
+        onLoginFailure = {handleSocialLoginFailure}
+        className = 'social-btn facebook'
+      >
+        <FontAwesome 
+          name = 'facebook'
+          className = 'social-logo'
+        />
+        Login with Facebook
+      </SocialButton>
+      <SocialButton
+        provider = 'google'
+        appId = {GOOGLE_CLIENT_ID}
+        onLoginSuccess = {handleSocialLogin}
+        onLoginFailure = {handleSocialLoginFailure}
+        className = 'social-btn google'
+      >
+        <FontAwesome 
+          name = 'google'
+          className = 'social-logo'
+        />
+        Login with Google
+      </SocialButton>
+    </div>    
+  </div>
+)
+const mapStateToProps = state => {
+  return {    
+    isVisibleLogin : state.isVisibleLogin
+  };
 };
 
-const responseGoogle = response => {
-  console.log(response);
-};
+const mapDispatchToProps = dispatch => ({ 
+  toggleLogin: () => {
+    dispatch(toggleLoginModalAction())
+  }
+});
 
-const LoginComponent = () => (
-      <div className = 'login-container'>
-        <div>
-          <form className = 'login-form'>   
-            <TextField
-              label = 'Full name' 
-              type = 'text'         
-              margin = 'normal'
-              required          
-            /> 
-            <TextField
-              label = 'Email' 
-              type = 'email'         
-              margin = 'normal'
-              required          
-            />      
-            <TextField
-              label ='Password'          
-              type = 'password'
-              margin = 'normal'
-              required
-            />
-            <button 
-              className ='login-btn email'
-              type = 'submit'
-            >
-              Sign Up
-            </button>              
-          </form>
-          <span>OR</span>
-          <div className ='login-social'>
-            <FacebookLogin
-              appId = '197070654556237'
-              autoLoad = {true}
-              fields = 'name,email,picture'
-              callback = {responseFacebook}
-              cssClass = 'login-btn fb'
-            />
-            <GoogleLogin
-              clientId = '223535496927-ih6j586iut5vnq55tl7paobtdjv1hphm.apps.googleusercontent.com'
-              buttonText = 'Login with Google+'
-              onSuccess = {responseGoogle}
-              onFailure = {responseGoogle}
-             />,
-            <button className ='twitter login-btn'>
-              <i className ='fa fa-twitter fa-fw'></i> 
-              Login with Twitter
-            </button>
-            <button className ='google login-btn'><i className ='fa fa-google fa-fw'>
-              </i> Login with Google+
-            </button>
-          </div>
-        </div>
-     </div>
-    );
-
-export default LoginComponent;
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(LoginComponent));
